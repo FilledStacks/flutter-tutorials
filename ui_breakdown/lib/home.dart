@@ -27,16 +27,25 @@ class Home extends StatelessWidget {
               ]),
         );
 
-  Widget get videoDescription =>  Expanded(child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                  Text('Test text'),
-                  Text('Test text'),
-                  Text('Test text'),
-                  Text('Test text'),
-                  Text('Test text'),
-                ]));
+  Widget get videoDescription =>  Expanded(child: Padding(
+    padding: const EdgeInsets.only(left: 20.0),
+    child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                    Text('@firstjonny'),
+                    Container(height: 10.0,),
+                    Text('Video title and some other stuff'),
+                    Container(height: 10.0,),
+                    Row(children: [
+                    Icon(Icons.music_note, color: Colors.white, size: 15.0),
+                    Container(width: 10.0,),
+                    Text('Artist name'),
+                    Container(width: 10.0,),
+                    Text('Song name')]),
+                    Container(height: 8.0,),
+                  ]),
+  ));
 
   Widget get centerSection => Expanded(child:
               Row(
