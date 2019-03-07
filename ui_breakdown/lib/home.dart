@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class Home extends StatelessWidget {
   static const double NavigationIconSize = 35.0;
@@ -52,8 +53,7 @@ class Home extends StatelessWidget {
                       _getVideoAction(title: '3.2m', icon: Icons.favorite),
                       _getVideoAction(title: '16.4k', icon: Icons.chat_bubble),
                       _getVideoAction(title: 'Share', icon: Icons.reply),
-                      _getVideoAction(title: '3.2m'),
-   
+                      _getMusicPlayerAction()
                     ],
                   ),
                 )
@@ -113,12 +113,18 @@ class Home extends StatelessWidget {
         height: ActionWidgetSize,
         child: Column(children: [
           Container(
+            padding: EdgeInsets.all(1.0),
             height: ProfileIconSize, 
             width: ProfileIconSize,
             decoration: BoxDecoration(
-              color: Colors.grey[300],
+              color: Colors.white,
               borderRadius: BorderRadius.circular(ProfileIconSize / 2)
             ),
+            child: CachedNetworkImage(
+              imageUrl: "https://secure.gravatar.com/avatar/ef4a9338dca42372f15427cdb4595ef7",
+              placeholder: (context, url) => new CircularProgressIndicator(),
+              errorWidget: (context, url, error) => new Icon(Icons.error),
+          ),
           ),
           
           ])), 
@@ -131,8 +137,44 @@ class Home extends StatelessWidget {
            Positioned(
             bottom: 0,
             left: ((ActionWidgetSize / 2) - (FollowActionIconSize / 2)),
-            child: Icon(Icons.add_circle, color: Colors.red, size: FollowActionIconSize))
+            child: Icon(Icons.add_circle, color: Color.fromARGB(255, 255, 43, 84), size: FollowActionIconSize))
           
           ]);
+  }
+
+  Widget _getMusicPlayerAction({
+    String pictureUrl
+  }) {
+   return Container(
+        margin: EdgeInsets.only(top: 10.0),
+        width: ActionWidgetSize, 
+        height: ActionWidgetSize,
+        child: Column(children: [
+          Container(
+            padding: EdgeInsets.all(11.0),
+            height: ProfileIconSize, 
+            width: ProfileIconSize,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.grey[800],
+                  Colors.grey[900],
+                  Colors.grey[900],
+                  Colors.grey[800]
+                ],
+                stops: [0.0,0.4, 0.6,1.0],
+                begin: Alignment.bottomLeft,
+                end: Alignment.topRight
+              ),
+              borderRadius: BorderRadius.circular(ProfileIconSize / 2)
+            ),
+            child: CachedNetworkImage(
+              imageUrl: "https://secure.gravatar.com/avatar/ef4a9338dca42372f15427cdb4595ef7",
+              placeholder: (context, url) => new CircularProgressIndicator(),
+              errorWidget: (context, url, error) => new Icon(Icons.error),
+          ),
+          ),
+          
+          ]));
   }
 }
