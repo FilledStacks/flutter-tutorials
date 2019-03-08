@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tik_tok_ui/home.dart';
 import 'package:tik_tok_ui/home_phase1.dart';
 import 'package:tik_tok_ui/home_phase2.dart';
+import 'package:tik_tok_ui/home_phase3.dart';
 import 'package:tik_tok_ui/home_final.dart';
 
 void main() => runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         ),
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: HomePhase3(),
     );
   }
 }
