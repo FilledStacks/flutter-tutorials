@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:ui_breakdown/tik_tok_icons_icons.dart';
+import 'package:tik_tok_ui/tik_tok_icons_icons.dart';
 
 class HomeFinal extends StatelessWidget {
   static const double NavigationIconSize = 20.0;

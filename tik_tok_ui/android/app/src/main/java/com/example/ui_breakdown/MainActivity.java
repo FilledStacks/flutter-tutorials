@@ -1,4 +1,4 @@
-package com.example.ui_breakdown;
+package com.example.tik_tok_ui;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
