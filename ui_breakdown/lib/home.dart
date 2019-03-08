@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:ui_breakdown/tik_tok_icons_icons.dart';
 
 class Home extends StatelessWidget {
-  static const double NavigationIconSize = 35.0;
+  static const double NavigationIconSize = 20.0;
   static const double ActionWidgetSize = 60.0;
-  static const double ActionIconSize = 45.0;
+  static const double ActionIconSize = 35.0;
+  static const double ShareActionIconSize = 25.0;
   static const double ProfileIconSize = 50.0;
   static const double ActionIconGap = 12.0;
   static const double FollowActionIconSize = 25.0;
+  static const double CreateButtonWidth = 38.0;
 
   Widget get followingContainer => Container(
           height: 100.0,
@@ -33,19 +36,33 @@ class Home extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                    Text('@firstjonny'),
+                    Text('@firstjonny', style: TextStyle(fontWeight: FontWeight.bold),),
                     Container(height: 10.0,),
                     Text('Video title and some other stuff'),
                     Container(height: 10.0,),
                     Row(children: [
                     Icon(Icons.music_note, color: Colors.white, size: 15.0),
                     Container(width: 10.0,),
-                    Text('Artist name'),
+                    Text('Artist name', style: TextStyle(fontSize: 12.0)),
                     Container(width: 10.0,),
-                    Text('Song name')]),
-                    Container(height: 8.0,),
+                    Text('Song name', style: TextStyle(fontSize: 12.0))]),
+                    Container(height: 12.0,),
                   ]),
   ));
+
+  Widget get actionsToolbar => Container(
+                  width: 100.0,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      _getProfileVideoAction(),
+                      _getVideoAction(title: '3.2m', icon: TikTokIcons.heart),
+                      _getVideoAction(title: '16.4k', icon: TikTokIcons.chat_bubble),
+                      _getVideoAction(title: 'Share', icon: TikTokIcons.reply, isShare: true),
+                      _getMusicPlayerAction()
+                    ],
+                  ),
+                );
 
   Widget get centerSection => Expanded(child:
               Row(
@@ -53,34 +70,56 @@ class Home extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
                 videoDescription,
-                Container(
-                  width: 100.0,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      _getProfileVideoAction(),
-                      _getVideoAction(title: '3.2m', icon: Icons.favorite),
-                      _getVideoAction(title: '16.4k', icon: Icons.chat_bubble),
-                      _getVideoAction(title: 'Share', icon: Icons.reply),
-                      _getMusicPlayerAction()
-                    ],
-                  ),
-                )
+                actionsToolbar
               ]));
+
+  
 
   Widget get navigationBar => Padding(
     padding: EdgeInsets.only(top: 15.0),
     child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(Icons.home, color: Colors.white, size: NavigationIconSize),
-                Icon(Icons.search,
+                Icon(TikTokIcons.home, color: Colors.white, size: NavigationIconSize),
+                Icon(TikTokIcons.search,
                     color: Colors.white, size: NavigationIconSize),
-                Icon(Icons.add_box,
+                Container(
+                  width: 45.0, 
+                  height: 27.0,
+                  child: Stack(
+                    children:[
+                      Container(
+                        margin: EdgeInsets.only(left: 10.0),
+                        width: CreateButtonWidth,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 250, 45, 108),
+                        borderRadius: BorderRadius.circular(7.0)
+                      )),
+                      
+                      Container(
+                        margin: EdgeInsets.only(right: 10.0),
+                        width: CreateButtonWidth,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 32, 211, 234),
+                        borderRadius: BorderRadius.circular(7.0)
+                      )),
+
+
+
+                      Center(child:Container(
+                        height: double.infinity,
+                        width: CreateButtonWidth,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(7.0)
+                      ),
+                      child: Icon(Icons.add, size: 20.0,),
+                      )),
+                      ]
+                  ),),
+                Icon(TikTokIcons.messages,
                     color: Colors.white, size: NavigationIconSize),
-                Icon(Icons.message,
-                    color: Colors.white, size: NavigationIconSize),
-                Icon(Icons.person,
+                Icon(TikTokIcons.profile,
                     color: Colors.white, size: NavigationIconSize)
               ],
             ));
@@ -94,6 +133,10 @@ class Home extends StatelessWidget {
           children: <Widget>[
             followingContainer,
             centerSection,
+            Opacity(
+              opacity: 0.1,
+              child: Container(height: 1.0,
+            color: Colors.grey[300])),
             navigationBar,
           ],
         ),
@@ -103,14 +146,18 @@ class Home extends StatelessWidget {
 
   Widget _getVideoAction({
     String title, 
-    IconData icon}) {
+    IconData icon, 
+    bool isShare = false}) {
     return Container(
-        margin: EdgeInsets.only(top: 10.0),
+        margin: EdgeInsets.only(top: 15.0),
         width: ActionWidgetSize, 
         height: ActionWidgetSize,
         child: Column(children: [
-          Icon(icon, size: ActionIconSize, color: Colors.grey[300]),
-          Text(title, style: TextStyle(fontSize: 12.0),)
+          Icon(icon, size: isShare ? ShareActionIconSize : ActionIconSize, color: Colors.grey[300]),
+          Padding(
+            padding: EdgeInsets.only(top: isShare ? 5.0 : 2.0),
+            child: Text(title, style: TextStyle(fontSize: isShare? 10.0:12.0)),
+          )
           ]));
   }
 

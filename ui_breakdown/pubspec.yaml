@@ -57,6 +57,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family:  TikTokIcons
+      fonts:
+       - asset: assets/fonts/TikTokIcons.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:
