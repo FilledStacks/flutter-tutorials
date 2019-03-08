@@ -103,9 +103,6 @@ class Home extends StatelessWidget {
                         color: Color.fromARGB(255, 32, 211, 234),
                         borderRadius: BorderRadius.circular(7.0)
                       )),
-
-
-
                       Center(child:Container(
                         height: double.infinity,
                         width: CreateButtonWidth,
