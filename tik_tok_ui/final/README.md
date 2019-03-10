@@ -1,16 +1,5 @@
-# tik_tok_ui
+# Final phase
 
-A new Flutter project.
+In this folder you can find the final code for the tutorial. It contains a home_final_singlefile.dart which is all the code for the UI in one file for devs that just wants to see the code.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+I am still busy working on this and will be done when the second tutorial is posted on medium. See the first one here to get to this point.
