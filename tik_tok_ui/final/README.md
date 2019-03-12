@@ -1,16 +1,3 @@
-# tik_tok_ui
+# Final
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+This is the completed tutorial code for building the Tik Tok UI. You can see both [Part1](https://medium.com/filledstacks/breaking-down-tiktoks-ui-using-flutter-8489fe4ad944) and [Part2](https://medium.com/filledstacks/building-tiktoks-ui-in-flutter-part-2-build-the-small-parts-42fb2089d605) on the [FilledStacks Publication](https://medium.com/filledstacks)
