@@ -73,15 +73,7 @@ class HomeSingleFile extends StatelessWidget {
                 actionsToolbar
               ]));
 
-  Widget get navigationBar => Padding(
-    padding: EdgeInsets.only(top: 15.0),
-    child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(TikTokIcons.home, color: Colors.white, size: NavigationIconSize),
-                Icon(TikTokIcons.search,
-                    color: Colors.white, size: NavigationIconSize),
-                Container(
+              Widget get customCreateIcon => Container(
                   width: 45.0, 
                   height: 27.0,
                   child: Stack(
@@ -111,7 +103,17 @@ class HomeSingleFile extends StatelessWidget {
                       child: Icon(Icons.add, size: 20.0,),
                       )),
                       ]
-                  ),),
+                  ));
+
+  Widget get navigationBar => Padding(
+    padding: EdgeInsets.only(top: 15.0),
+    child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(TikTokIcons.home, color: Colors.white, size: NavigationIconSize),
+                Icon(TikTokIcons.search,
+                    color: Colors.white, size: NavigationIconSize),
+                
                 Icon(TikTokIcons.messages,
                     color: Colors.white, size: NavigationIconSize),
                 Icon(TikTokIcons.profile,
@@ -193,39 +195,5 @@ class HomeSingleFile extends StatelessWidget {
           ]);
   }
 
-  Widget _getMusicPlayerAction({
-    String pictureUrl
-  }) {
-   return Container(
-        margin: EdgeInsets.only(top: 10.0),
-        width: ActionWidgetSize, 
-        height: ActionWidgetSize,
-        child: Column(children: [
-          Container(
-            padding: EdgeInsets.all(11.0),
-            height: ProfileIconSize, 
-            width: ProfileIconSize,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Colors.grey[800],
-                  Colors.grey[900],
-                  Colors.grey[900],
-                  Colors.grey[800]
-                ],
-                stops: [0.0,0.4, 0.6,1.0],
-                begin: Alignment.bottomLeft,
-                end: Alignment.topRight
-              ),
-              borderRadius: BorderRadius.circular(ProfileIconSize / 2)
-            ),
-            child: CachedNetworkImage(
-              imageUrl: "https://secure.gravatar.com/avatar/ef4a9338dca42372f15427cdb4595ef7",
-              placeholder: (context, url) => new CircularProgressIndicator(),
-              errorWidget: (context, url, error) => new Icon(Icons.error),
-          ),
-          ),
-          
-          ]));
-  }
+ 
 }
