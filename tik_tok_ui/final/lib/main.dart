@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tik_tok_ui/home.dart';
-import 'package:tik_tok_ui/home_final_singlefile.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
           displayColor: Colors.white
         ),
       ),
-      home: HomeSingleFile(),
+      home: Home(),
     );
   }
 }
