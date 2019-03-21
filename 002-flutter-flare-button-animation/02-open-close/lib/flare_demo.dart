@@ -12,17 +12,22 @@ class _FlareDemoState extends State<FlareDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple,
-      body: Center(
-          child: GestureDetector(
-        onTap: () {
-          setState(() {
-            isOpen = !isOpen;
-          });
-        },
-        child: FlareActor('assets/button-animation.flr',
-            animation: isOpen ? 'activate' : 'deactivate', fit: BoxFit.contain),
-      )),
-    );
+        backgroundColor: Colors.purple,
+        body: GestureDetector(
+          onTap: (){
+            setState(() {
+             isOpen = !isOpen; 
+            });
+          },
+          child: _getAnimationUI()));
+  }
+
+  Widget _getAnimationUI() {
+    return Center(
+          child:
+              FlareActor(
+                'assets/button-animation.flr', 
+                animation: isOpen ? 'activate' : 'deactivate'),
+        );
   }
 }
