@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_tutorial/smart_flare_animation.dart';
 
 class FlareDemo extends StatefulWidget {
   @override
@@ -7,27 +7,12 @@ class FlareDemo extends StatefulWidget {
 }
 
 class _FlareDemoState extends State<FlareDemo> {
-  bool isOpen = false;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.purple,
-        body: GestureDetector(
-          onTap: (){
-            setState(() {
-             isOpen = !isOpen; 
-            });
-          },
-          child: _getAnimationUI()));
-  }
-
-  Widget _getAnimationUI() {
-    return Center(
-          child:
-              FlareActor(
-                'assets/button-animation.flr', 
-                animation: isOpen ? 'activate' : 'deactivate'),
-        );
+        body: Align(
+          alignment: Alignment.bottomCenter,
+          child: SmartFlareAnimation()));
   }
 }
