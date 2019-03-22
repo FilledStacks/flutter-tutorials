@@ -14,20 +14,12 @@ class _FlareDemoState extends State<FlareDemo> {
     return Scaffold(
         backgroundColor: Colors.purple,
         body: GestureDetector(
-          onTap: (){
-            setState(() {
-             isOpen = !isOpen; 
-            });
-          },
-          child: _getAnimationUI()));
-  }
-
-  Widget _getAnimationUI() {
-    return Center(
-          child:
-              FlareActor(
-                'assets/button-animation.flr', 
-                animation: isOpen ? 'activate' : 'deactivate'),
-        );
+            onTap: () {
+              setState(() {
+                isOpen = !isOpen;
+              });
+            },
+            child: FlareActor('assets/button-animation.flr',
+                animation: isOpen ? 'activate' : 'deactivate')));
   }
 }

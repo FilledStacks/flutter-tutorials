@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
-import 'package:flare_flutter/flare_controller.dart';
-import 'package:flare_flutter/flare_controls.dart';
 
 enum AnimationToPlay {
   Activate,
@@ -20,6 +18,7 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
   static const double AnimationHeight = 251.0;
 
   bool isOpen = false;
+
   AnimationToPlay _animationToPlay = AnimationToPlay.Deactivate;
 
   @override
@@ -27,24 +26,20 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
     return Container(
         width: AnimationWidth,
         height: AnimationHeight,
-        // color: Colors.red,
         child: GestureDetector(
             onTapUp: (tapInfo) {
-              var globalTouchPosition = tapInfo.globalPosition;
-              var localTouchPosition = (context.findRenderObject() as RenderBox)
-                  .globalToLocal(globalTouchPosition);
+              var localTouchPosition =_getLocalPositionFromGlobal(tapInfo.globalPosition);
 
               var topHalfTouched = localTouchPosition.dy < AnimationHeight / 2;
+              var leftSideTouched = localTouchPosition.dx < AnimationWidth / 3;
+              var rightSideTouched = localTouchPosition.dx > (AnimationWidth / 3) * 2;
+              var middleTouched = !leftSideTouched && !rightSideTouched;
 
-              if (localTouchPosition.dx < AnimationWidth / 3 &&
-                  topHalfTouched) {
+              if ( leftSideTouched && topHalfTouched) {
                 setAnimationToPlay(AnimationToPlay.CameraTapped);
-              } else if (localTouchPosition.dx > AnimationWidth / 3 &&
-                  localTouchPosition.dx < (AnimationWidth / 3) * 2 &&
-                  topHalfTouched) {
+              } else if (middleTouched && topHalfTouched) {
                 setAnimationToPlay(AnimationToPlay.PulseTapped);
-              } else if (localTouchPosition.dx > (AnimationWidth / 3) * 2 &&
-                  topHalfTouched) {
+              } else if (rightSideTouched && topHalfTouched) {
                 setAnimationToPlay(AnimationToPlay.ImageTapped);
               } else {
                 if (isOpen) {
@@ -57,6 +52,13 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
               }
             },
             child: _getAnimationUI()));
+  }
+
+  Offset _getLocalPositionFromGlobal(Offset globalPosition) {
+     var globalTouchPosition = globalPosition;
+              var localTouchPosition = (context.findRenderObject() as RenderBox)
+                  .globalToLocal(globalTouchPosition);
+    return localTouchPosition;
   }
 
   Widget _getAnimationUI() {
