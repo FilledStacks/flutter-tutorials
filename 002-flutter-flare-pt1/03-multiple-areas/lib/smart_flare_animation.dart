@@ -28,46 +28,41 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
         height: AnimationHeight,
         child: GestureDetector(
             onTapUp: (tapInfo) {
-              var localTouchPosition =_getLocalPositionFromGlobal(tapInfo.globalPosition);
+              var localTouchPosition = (context.findRenderObject() as RenderBox)
+                  .globalToLocal(tapInfo.globalPosition);
 
               var topHalfTouched = localTouchPosition.dy < AnimationHeight / 2;
+
               var leftSideTouched = localTouchPosition.dx < AnimationWidth / 3;
-              var rightSideTouched = localTouchPosition.dx > (AnimationWidth / 3) * 2;
+
+              var rightSideTouched =
+                  localTouchPosition.dx > (AnimationWidth / 3) * 2;
+
               var middleTouched = !leftSideTouched && !rightSideTouched;
 
-              if ( leftSideTouched && topHalfTouched) {
-                setAnimationToPlay(AnimationToPlay.CameraTapped);
+              if (leftSideTouched && topHalfTouched) {
+                _setAnimationToPlay(AnimationToPlay.CameraTapped);
               } else if (middleTouched && topHalfTouched) {
-                setAnimationToPlay(AnimationToPlay.PulseTapped);
+                _setAnimationToPlay(AnimationToPlay.PulseTapped);
               } else if (rightSideTouched && topHalfTouched) {
-                setAnimationToPlay(AnimationToPlay.ImageTapped);
+                _setAnimationToPlay(AnimationToPlay.ImageTapped);
               } else {
                 if (isOpen) {
-                  setAnimationToPlay(AnimationToPlay.Deactivate);
+                  _setAnimationToPlay(AnimationToPlay.Deactivate);
                 } else {
-                  setAnimationToPlay(AnimationToPlay.Activate);
+                  _setAnimationToPlay(AnimationToPlay.Activate);
                 }
 
                 isOpen = !isOpen;
               }
             },
-            child: _getAnimationUI()));
+            child: FlareActor(
+              'assets/button-animation.flr',
+              animation: _getAnimationName(_animationToPlay),
+              fit: BoxFit.contain,
+            )));
   }
 
-  Offset _getLocalPositionFromGlobal(Offset globalPosition) {
-     var globalTouchPosition = globalPosition;
-              var localTouchPosition = (context.findRenderObject() as RenderBox)
-                  .globalToLocal(globalTouchPosition);
-    return localTouchPosition;
-  }
-
-  Widget _getAnimationUI() {
-    return FlareActor(
-      'assets/button-animation.flr',
-      animation: _getAnimationName(_animationToPlay),
-      fit: BoxFit.contain,
-    );
-  }
 
   String _getAnimationName(AnimationToPlay animationToPlay) {
     switch (animationToPlay) {
@@ -87,7 +82,7 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
     }
   }
 
-  void setAnimationToPlay(AnimationToPlay animation) {
+  void _setAnimationToPlay(AnimationToPlay animation) {
     setState(() {
       _animationToPlay = animation;
     });
