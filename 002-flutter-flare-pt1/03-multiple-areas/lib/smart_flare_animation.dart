@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_flutter/flare_controls.dart';
 
 enum AnimationToPlay {
   Activate,
   Deactivate,
   CameraTapped,
   PulseTapped,
-  ImageTapped,
-  Empty
+  ImageTapped
 }
 
 class SmartFlareAnimation extends StatefulWidget {
@@ -23,6 +23,9 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
 
   AnimationToPlay _animationToPlay = AnimationToPlay.Deactivate;
   AnimationToPlay _lastPlayedAnimation;
+
+  // Flare animation controls
+  final FlareControls animationControls = FlareControls();
 
   bool isOpen = false;
 
@@ -63,7 +66,8 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
             }
           },
           child: FlareActor('assets/button-animation.flr',
-              animation: _getAnimationName(_animationToPlay))),
+                  controller: animationControls, 
+                  animation: 'deactivate')),
     );
   }
 
@@ -79,32 +83,19 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
         return 'pulse_tapped';
       case AnimationToPlay.ImageTapped:
         return 'image_tapped';
-        break;
       default:
-        return '';
+        return 'deactivate';
     }
   }
 
   void _setAnimationToPlay(AnimationToPlay animation) {
-    setState(() {
-
       var isTappedAnimation = _getAnimationName(animation).contains("_tapped");
-      if(isTappedAnimation && _lastPlayedAnimation == AnimationToPlay.Deactivate) {
+      if (isTappedAnimation && _lastPlayedAnimation == AnimationToPlay.Deactivate) {
         return;
       }
 
-      if (animation == _animationToPlay) {
-        _animationToPlay = AnimationToPlay.Empty;
-        Timer(const Duration(milliseconds: 50), () {
-          setState(() {
-            _animationToPlay = animation;
-          });
-        });
-      } else {
-        _animationToPlay = animation;
-      }
+      animationControls.play(_getAnimationName(animation));
 
       _lastPlayedAnimation = animation;
-    });
   }
 }
