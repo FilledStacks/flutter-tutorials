@@ -66,8 +66,7 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
             }
           },
           child: FlareActor('assets/button-animation.flr',
-                  controller: animationControls, 
-                  animation: 'deactivate')),
+              controller: animationControls, animation: 'deactivate')),
     );
   }
 
@@ -89,13 +88,14 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
   }
 
   void _setAnimationToPlay(AnimationToPlay animation) {
-      var isTappedAnimation = _getAnimationName(animation).contains("_tapped");
-      if (isTappedAnimation && _lastPlayedAnimation == AnimationToPlay.Deactivate) {
-        return;
-      }
+    var isTappedAnimation = _getAnimationName(animation).contains("_tapped");
+    if (isTappedAnimation &&
+        _lastPlayedAnimation == AnimationToPlay.Deactivate) {
+      return;
+    }
 
-      animationControls.play(_getAnimationName(animation));
+    animationControls.play(_getAnimationName(animation));
 
-      _lastPlayedAnimation = animation;
+    _lastPlayedAnimation = animation;
   }
 }
