@@ -12,7 +12,7 @@ class _FlareDemoState extends State<FlareDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.purple,
+        backgroundColor: Color.fromARGB(255, 102, 18, 222),
         body: GestureDetector(
             onTap: () {
               setState(() {
