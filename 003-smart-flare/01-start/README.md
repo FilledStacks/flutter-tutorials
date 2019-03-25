@@ -1,3 +1,3 @@
-# Smarter Flare animation using Flutter - Final
+# Smarter Flare - tutorias
 
-This is the final result for the tutorial. [Smarter Flare animations with Flutter]()
+This is the starting project for the smart-flare tutorial. [Using SmartFlare and Flare](https://medium.com/@dane.mackier/smartflare-for-interactive-flareactors-an-experiment-and-package-e5bcfe652503)
