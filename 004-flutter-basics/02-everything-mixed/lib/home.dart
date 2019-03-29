@@ -6,13 +6,23 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  List<String> _pageData = List<String>();
+
+  List<String> _pageData;
+
+  bool get _fetchingData => _pageData == null;
 
   @override
   void initState() {
-    _getListData().then((data) => 
+    _getListData(hasError: true).then((data) => 
         setState(() {
+          if(data.length == 0) {
+            data.add('No data found for your account. Add something and check back.');
+          }
           _pageData = data;
+        }))
+        .catchError((error) => 
+        setState((){
+          _pageData = [error];
         }));
     super.initState();
   }
@@ -21,7 +31,9 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[900],
-      body: ListView.builder(
+      body: _fetchingData 
+      ? Center(child: CircularProgressIndicator())
+      : ListView.builder(
         itemCount: _pageData.length,
         itemBuilder: (buildContext, index) =>_getListItemUi(index)
     ));
@@ -42,8 +54,19 @@ class _HomeState extends State<Home> {
       );
   }
 
-  Future<List<String>> _getListData() async {
-    await Future.delayed(Duration(seconds: 1));
+  Future<List<String>> _getListData({
+    bool hasError = false,
+    bool hasData = true}) async {
+    await Future.delayed(Duration(seconds: 2));
+
+    if(hasError) {
+      return Future.error('An error occurred while fetching the data. Please try again later.');
+    }
+
+    if(!hasData) {
+      return List<String>();
+    }
+
     return List<String>.generate(10, (index) => '$index title');
   }
 }
