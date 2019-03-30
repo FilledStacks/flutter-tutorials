@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-
-enum HomeViewState { Busy, DataRetrieved, NoData }
+import './home_model.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -9,12 +7,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final StreamController<HomeViewState> stateController = StreamController<HomeViewState>();
-  List<String> listItems;
+  final model = HomeModel();
 
   @override
   void initState() {
-    _getListData();
+    model.getListData();
     super.initState();
   }
 
@@ -23,11 +20,11 @@ class _HomeState extends State<Home> {
     return Scaffold(
         floatingActionButton: FloatingActionButton(onPressed: () {
           // We want to refresh, but this actually does nothing. Which is the limitation
-          _getListData();
+          model.getListData();
         }),
         backgroundColor: Colors.grey[900],
         body: StreamBuilder(
-            stream: stateController.stream,
+            stream: model.homeState,
             builder: (buildContext, snapshot) {
               if (snapshot.hasError) {
                 return _getInformationMessage(snapshot.error);
@@ -45,9 +42,9 @@ class _HomeState extends State<Home> {
               }
 
               return ListView.builder(
-                  itemCount: listItems.length,
+                  itemCount: model.listItems.length,
                   itemBuilder: (buildContext, index) =>
-                      _getListItemUi(index, listItems));
+                      _getListItemUi(index, model.listItems));
             }));
   }
 
@@ -75,22 +72,5 @@ class _HomeState extends State<Home> {
       textAlign: TextAlign.center,
       style: TextStyle(fontWeight: FontWeight.w900, color: Colors.grey[500]),
     ));
-  }
-
-  Future _getListData({bool hasError = false, bool hasData = true}) async {
-    stateController.add(HomeViewState.Busy);
-    await Future.delayed(Duration(seconds: 2));
-
-    if (hasError) {
-     return stateController.addError(
-          'An error occurred while fetching the data. Please try again later.');
-    }
-
-    if (!hasData) {
-      return stateController.add(HomeViewState.NoData);
-    }
-
-    listItems = List<String>.generate(10, (index) => '$index title');
-    stateController.add(HomeViewState.DataRetrieved);
   }
 }
