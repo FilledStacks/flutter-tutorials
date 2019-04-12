@@ -10,9 +10,18 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:Scaffold(
-        body: Container(),
-      ),
+      home: Home()
     );
   }
+}
+
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+        body: Container(),
+      );
+  }
+
 }
