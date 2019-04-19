@@ -18,8 +18,7 @@ class HomeView extends StatelessWidget {
             onPressed: () async {
               var whereToNavigate = await model.saveData();
               if (whereToNavigate) {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SuccessView()));
+                Navigator.push(context,MaterialPageRoute(builder: (context) => SuccessView(title: "Passed in from home")));
               } else {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => ErrorView()));
