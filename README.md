@@ -16,3 +16,11 @@ The tutorials in here are meant for beginner Flutter devs that has had some expe
 **Overflown Stacks - A Guide to basic navigation in Flutter using Navigator** \[ [CheatSheet](https://medium.com/filledstacks/basic-navigation-in-flutter-navigator-only-cheatsheet-9c2e2584a6b1) \] \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/005-basic-navigation) \] - This repo contains an implementation of basic navigation using the code snippets defined in the guide.
 
 **Flutter + (Smart)Flare - Building a Gooey side menu** \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/006-flare-drawer) \] \[ [Video Tutorial](https://youtu.be/fZuLh-oc5Ao) \] \[ [Original Animation](https://www.2dimensions.com/a/danemackier/files/flare/slideout-menu/preview) \] - In this tutorial I go over the process of building a slideout menu in Flare. Then importing into Flutter and using SmartFlare to add some interactive functionality to it. 
+
+**Flutter Architecture - A complete guide to the ScopedModel architecture** \[ [Written Tutorial](https://medium.com/filledstacks/flutter-architecture-scopedmodel-a-complete-guide-to-a-real-world-setup-56501747e179) \] \[ [Video Tutorial](https://youtu.be/JsjDLHxGz4M) \]  \[ [AppSkeletons](https://www.appskeletons.com/) \]- In this tutorial we'll lay the foundation to develop an application using Flutter and ScopedModel that's easy to maintain and extend. 
+
+## Tools by FilledStacks
+
+[AppSkeletons](https://www.appskeletons.com/): Create your own custom template, perfectly architected and catered to your scenario. Add predefined view types and skip 2-3 days of code setup and just start developing
+
+[SmartFlare](https://pub.dartlang.org/packages/smart_flare): An extension of the already awesome Flare packages that adds interactive to FlareActors with some more functionality.
