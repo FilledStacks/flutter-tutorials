@@ -5,6 +5,8 @@ The tutorials in here are meant for beginner Flutter devs that has had some expe
 
 ## Turorials
 
+**008 - Building a Realtime stats monitor using Flutter and Firebase** \[ [Written](https://www.filledstacks.com/post/building-a-realtime-stats-monitor-in-flutter) \] \[ [Video](https://youtu.be/qa6A2TOqY0A) \] - In this tutorial I go over the steps for implementing a real time stats monitor for [AppSkeletons](https://www.appskeletons.com/)
+
 **007 - Flutter Architecture - A complete guide to the ScopedModel architecture** \[ [Written](https://www.filledstacks.com/post/flutter-architecture-scoped-model-implementation-guide) \] \[ [Video](https://youtu.be/JsjDLHxGz4M) \]  \[ [AppSkeletons](https://www.appskeletons.com/) \]- In this tutorial we'll lay the foundation to develop an application using Flutter and ScopedModel that's easy to maintain and extend. 
 
 **006 - Flutter + (Smart)Flare - Building a Gooey side menu** \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/006-flare-drawer) \] \[ [Video](https://youtu.be/fZuLh-oc5Ao) \] \[ [Animation](https://www.2dimensions.com/a/danemackier/files/flare/slideout-menu/preview) \] \[ [Written (code only)](https://www.filledstacks.com/post/flare-and-flutter-build-a-super-cool-gooey-slideout-menu) \] - In this tutorial I go over the process of building a slideout menu in Flare. Then importing into Flutter and using SmartFlare to add some interactive functionality to it. 
@@ -17,7 +19,7 @@ The tutorials in here are meant for beginner Flutter devs that has had some expe
 
 **002 - Smarter Flare Animations in Flutter - An Experiment** \[ [Video](https://youtu.be/vsyjMrZa5OU) \] \[ [Written](https://www.filledstacks.com/post/reducing-boilerplate-code-in-flutter-using-flare) \] \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/002-flutter-flare-pt1) \] - In this tutorial we look at how to reduce animation boiler plate code in Flutter using some basic calculations and the Awesome Flare.
 
-**Building a UI in Flutter - TikTok example:** \[ [Video](https://youtu.be/kJ2mGh5BLYk) \] \[ [Written P1](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-the-building-process) \] \[[Written P2](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-from-layout-to-polish)\] \[[Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/tik_tok_ui)\] - In this tutorial we break down the UI into Flutter Widgets, complete our layout and then tweak to get our final design to match our screenshots.
+**001 - Building a UI in Flutter - TikTok example:** \[ [Video](https://youtu.be/kJ2mGh5BLYk) \] \[ [Written P1](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-the-building-process) \] \[[Written P2](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-from-layout-to-polish)\] \[[Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/tik_tok_ui)\] - In this tutorial we break down the UI into Flutter Widgets, complete our layout and then tweak to get our final design to match our screenshots.
 
 
 ## Tools by FilledStacks
