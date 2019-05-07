@@ -1,7 +1,9 @@
 # Flutter tutorials
 The repo contains the source code for all the written tutorials by Filledstacks.
 
-The tutorials in here are meant for beginner Flutter devs that has had some experience, atleast, running a Flutter application. It will cover a few topics. Please watch and star this repo to stay up to date on changes.
+All Tutorials plus additional snippets and shorter posts can be found on the [Official FilledStacks website](https://www.filledstacks.com/). 
+
+Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
