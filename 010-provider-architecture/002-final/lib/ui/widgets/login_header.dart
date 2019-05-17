@@ -6,7 +6,7 @@ class LoginHeader extends StatelessWidget {
   final TextEditingController controller;
   final String validationMessage;
 
-  LoginHeader({@required this.controller, this.validationMessage});
+  LoginHeader({this.controller, this.validationMessage});
 
   @override
   Widget build(BuildContext context) {
