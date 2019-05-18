@@ -13,14 +13,14 @@ class Comments extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseView<CommentsModel>(
-        onModelReady: (model) => model.fetchComments(postId),
-        builder: (context, model, child) => model.state == ViewState.Busy
-            ? Center(child: CircularProgressIndicator())
-            : Expanded(child: ListView(
-                children: model.comments
-                    .map((comment) => CommentItem(comment))
-                    .toList(),
-              )));
+      onModelReady: (model) => model.fetchComments(postId),
+      builder: (context, model, child) => model.state == ViewState.Busy 
+      ? Center(child: CircularProgressIndicator())
+      : Expanded(child: ListView(
+        children: model.comments
+                  .map((comment) => CommentItem(comment)).toList(),
+      ),)
+    );
   }
 }
 

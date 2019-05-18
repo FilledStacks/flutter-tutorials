@@ -1,8 +1,8 @@
 import 'package:provider_architecutre/core/enums/viewstate.dart';
 import 'package:provider_architecutre/core/models/post.dart';
 import 'package:provider_architecutre/core/services/api.dart';
+import 'package:provider_architecutre/locator.dart';
 
-import '../../locator.dart';
 import 'base_model.dart';
 
 class HomeModel extends BaseModel {

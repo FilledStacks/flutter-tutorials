@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:provider_architecutre/core/enums/viewstate.dart';
 
 class BaseModel extends ChangeNotifier {

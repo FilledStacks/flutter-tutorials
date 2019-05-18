@@ -11,7 +11,7 @@ GetIt locator = GetIt();
 void setupLocator() {
   locator.registerLazySingleton(() => AuthenticationService());
   locator.registerLazySingleton(() => Api());
-  
+
   locator.registerLazySingleton(() => LoginModel());
   locator.registerFactory(() => HomeModel());
   locator.registerFactory(() => CommentsModel());

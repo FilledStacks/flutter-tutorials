@@ -12,35 +12,36 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginViewState extends State<LoginView> {
-  final TextEditingController controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return BaseView<LoginModel>(
         builder: (context, model, child) => Scaffold(
-              backgroundColor: backgroundColor,
-              body: Column(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  LoginHeader(controller: controller),
-                  model.state == ViewState.Busy
-                      ? CircularProgressIndicator()
-                      : FlatButton(
-                          color: Colors.white,
-                          child: Text(
-                            'Login',
-                            style: TextStyle(color: Colors.black),
-                          ),
-                          onPressed: () async {
-                            var loginSuccess = await model.login(controller.text);
-                            if (loginSuccess) {
-                              Navigator.pushNamed(context, '/');
-                            }
-                          })
-                ],
+          backgroundColor: backgroundColor,
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+            LoginHeader(
+              validationMessage: model.errorMessage,
+              controller: _controller),
+            model.state == ViewState.Busy
+            ? CircularProgressIndicator()
+            : FlatButton(
+              color: Colors.white,
+              child: Text(
+                'Login',
+                style: TextStyle(color: Colors.black),
               ),
-            ),
+              onPressed: () async { 
+                var loginSuccess = await model.login(_controller.text);
+                if(loginSuccess){
+                  Navigator.pushNamed(context, '/');
+                }
+              },
+            )
+          ],),
+        ),
     );
   }
 }
