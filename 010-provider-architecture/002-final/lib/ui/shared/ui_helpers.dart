@@ -13,9 +13,7 @@ class UIHelper {
   static const double HorizontalSpaceLarge = 60.0;
 
   /// Returns a vertical space with height set to [_VerticalSpaceSmall]
-  static Widget verticalSpaceSmall() {
-    return verticalSpace(_VerticalSpaceSmall);
-  }
+  static Widget verticalSpaceSmall = SizedBox(width: _VerticalSpaceSmall);
 
   /// Returns a vertical space with height set to [_VerticalSpaceMedium]
   static Widget verticalSpaceMedium() {
@@ -23,9 +21,7 @@ class UIHelper {
   }
 
   /// Returns a vertical space with height set to [_VerticalSpaceLarge]
-  static Widget verticalSpaceLarge() {
-    return verticalSpace(_VerticalSpaceLarge);
-  }
+  static const Widget verticalSpaceLarge = SizedBox(width: _VerticalSpaceLarge);
 
   /// Returns a vertical space equal to the [height] supplied
   static Widget verticalSpace(double height) {

@@ -1,18 +1,35 @@
 import 'package:provider_architecutre/core/enums/viewstate.dart';
 import 'package:provider_architecutre/core/models/comment.dart';
 import 'package:provider_architecutre/core/services/api.dart';
-
-import '../../locator.dart';
 import 'base_model.dart';
 
 class CommentsModel extends BaseModel {
-  Api _api = locator<Api>();
+  Api _api;
+  Api get api => _api;
+  set api(Api api) {
+    _api = api;
+    notifyListeners();
+  }
 
-  List<Comment> comments;
+  int _postId;
+  int get postId => _postId;
+  set postId(int postId) {
+    if (postId != _postId) {
+      _postId = postId;
+      _fetchComments(postId);
+      notifyListeners();
+    }
+  }
 
-  Future fetchComments(int postId) async {
+  List<Comment> _comments;
+  List<Comment> get comments => _comments;
+
+  Future _fetchComments(int postId) async {
+    if (state == ViewState.Busy) {
+      throw StateError('already fetching');
+    }
     setState(ViewState.Busy);
-    comments = await _api.getCommentsForPost(postId);
+    _comments = await _api.getCommentsForPost(postId);
     setState(ViewState.Idle);
   }
 }

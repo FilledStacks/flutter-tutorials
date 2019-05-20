@@ -8,11 +8,9 @@ import 'package:provider_architecutre/ui/shared/ui_helpers.dart';
 import 'package:provider_architecutre/ui/widgets/comments.dart';
 
 class PostView extends StatelessWidget {
-  final Post post;
-  PostView({this.post});
-
   @override
   Widget build(BuildContext context) {
+    final post = Provider.of<Post>(context);
     return Scaffold(
       backgroundColor: backgroundColor,
       body: Padding(
@@ -20,7 +18,7 @@ class PostView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            UIHelper.verticalSpaceLarge(),
+            UIHelper.verticalSpaceLarge,
             Text(post.title, style: headerStyle),
             Text(
               'by ${Provider.of<User>(context).name}',
@@ -28,7 +26,7 @@ class PostView extends StatelessWidget {
             ),
             UIHelper.verticalSpaceMedium(),
             Text(post.body),
-            Comments(post.id)
+            const Comments(),
           ],
         ),
       ),
