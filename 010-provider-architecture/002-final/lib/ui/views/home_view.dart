@@ -72,9 +72,6 @@ Widget postList(BuildContext context) {
       return Provider<Post>.value(
         key: ValueKey(post.id),
         value: post,
-        // it's not necessary to move the click handler to PostListItem
-        // but this allows to use a const constructor, which is better for performance.
-        // this way, only the item that changes rebuilds. Not the whole list.
         child: const PostListItem(),
       );
     },

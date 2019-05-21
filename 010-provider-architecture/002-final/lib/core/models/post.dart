@@ -1,16 +1,24 @@
-import 'package:json_annotation/json_annotation.dart';
-
-part 'post.g.dart';
-
-@JsonSerializable()
 class Post {
-  final int userId;
-  final int id;
-  final String title;
-  final String body;
+  int userId;
+  int id;
+  String title;
+  String body;
 
-  const Post({this.userId, this.id, this.title, this.body});
+  Post({this.userId, this.id, this.title, this.body});
 
-  factory Post.fromJson(Map<String, dynamic> json) => _$PostFromJson(json);
-  Map<String, dynamic> toJson() => _$PostToJson(this);
+  Post.fromJson(Map<String, dynamic> json) {
+    userId = json['userId'];
+    id = json['id'];
+    title = json['title'];
+    body = json['body'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['userId'] = this.userId;
+    data['id'] = this.id;
+    data['title'] = this.title;
+    data['body'] = this.body;
+    return data;
+  }
 }

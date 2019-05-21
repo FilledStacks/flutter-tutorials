@@ -17,8 +17,4 @@ class AuthenticationService {
     }
     return hasUser;
   }
-
-  dispose() {
-    _userController.close();
-  }
 }

@@ -4,12 +4,7 @@ import 'package:provider_architecutre/core/services/api.dart';
 import 'base_model.dart';
 
 class CommentsModel extends BaseModel {
-  Api _api;
-  Api get api => _api;
-  set api(Api api) {
-    _api = api;
-    notifyListeners();
-  }
+  Api api;
 
   int _postId;
   int get postId => _postId;
@@ -21,15 +16,11 @@ class CommentsModel extends BaseModel {
     }
   }
 
-  List<Comment> _comments;
-  List<Comment> get comments => _comments;
+  List<Comment> comments;
 
   Future _fetchComments(int postId) async {
-    if (state == ViewState.Busy) {
-      throw StateError('already fetching');
-    }
     setState(ViewState.Busy);
-    _comments = await _api.getCommentsForPost(postId);
+    comments = await api.getCommentsForPost(postId);
     setState(ViewState.Idle);
   }
 }

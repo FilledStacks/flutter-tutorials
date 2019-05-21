@@ -5,12 +5,7 @@ import 'package:provider_architecutre/core/services/api.dart';
 import 'base_model.dart';
 
 class HomeModel extends BaseModel {
-  Api _api;
-  Api get api => _api;
-  set api(Api api) {
-    _api = api;
-    notifyListeners();
-  }
+  Api api;
 
   int _userId;
   int get userId => _userId;
@@ -25,12 +20,8 @@ class HomeModel extends BaseModel {
   List<Post> posts = [];
 
   Future _getPosts(int userId) async {
-    if (state == ViewState.Busy) {
-      throw StateError(
-          "fetching posts again when the current request haven't finished");
-    }
     setState(ViewState.Busy);
-    posts = await _api.getPostsForUser(userId);
+    posts = await api.getPostsForUser(userId);
     setState(ViewState.Idle);
   }
 }

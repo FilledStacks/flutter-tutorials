@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:provider_architecutre/core/enums/viewstate.dart';
 import 'package:provider_architecutre/core/models/comment.dart';
 import 'package:provider_architecutre/core/models/post.dart';
+import 'package:provider_architecutre/core/services/api.dart';
 import 'package:provider_architecutre/core/viewmodels/comments_model.dart';
 import 'package:provider_architecutre/ui/shared/app_colors.dart';
 import 'package:provider_architecutre/ui/shared/ui_helpers.dart';
@@ -12,17 +13,10 @@ part 'comments.g.dart';
 
 @widget
 Widget comments(BuildContext context) {
-  // TODO(rrousselGit) refactor to ProxyChangeNotifierProvider2<Post, Api, CommentsModel> when available
-  return ProxyProvider<Post, CommentsModel>.custom(
-    builder: (context, post, previous) {
-      final model = previous ?? CommentsModel();
-      model.api = Provider.of(context);
-      model.postId = post.id;
-      return model;
-    },
-    providerBuilder: (_, model, child) =>
-        ChangeNotifierProvider.value(notifier: model, child: child),
-    dispose: (_, model) => model.dispose(),
+  return ProxyChangeNotifierProvider2<Post, Api, CommentsModel>(
+    builder: (context, post, api, previous) => (previous ?? CommentsModel())
+      ..api = api
+      ..postId = post.id,
     child: Consumer<CommentsModel>(
       builder: (context, model, child) => model.state == ViewState.Busy
           ? const Center(child: CircularProgressIndicator())

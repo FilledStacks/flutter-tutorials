@@ -23,54 +23,27 @@ class MyApp extends StatelessWidget {
       providers: [
         Provider(
           builder: (_) => Api(),
-          dispose: (_, api) => api.dispose(),
         ),
         ProxyProvider<Api, AuthenticationService>(
           builder: (_, api, previous) =>
               (previous ?? AuthenticationService())..api = api,
-          dispose: (_, auth) => auth.dispose(),
         ),
-        // TODO(rousselGit) change to StreamProxyProvider<AuthentificationService, User> when available
-        ProxyProvider<AuthenticationService, Stream<User>>.custom(
+        StreamProxyProvider<AuthenticationService, Stream<User>>(
           builder: (_, auth, __) => auth.user,
-          providerBuilder: (_, stream, child) {
-            return StreamProvider<User>.value(
-              stream: stream,
-              initialData: User.initial(),
-              child: child,
-            );
-          },
         ),
-        // TODO(rousselGit) change to ChangeNotifierProxyProvider2<User, Api, HomeModel> when available
-        ProxyProvider<User, HomeModel>.custom(
-          builder: (context, user, previous) => (previous ?? HomeModel())
-            ..api = Provider.of<Api>(context)
+        ChangeNotifierProxyProvider2<User, Api, HomeModel>(
+          builder: (context, user, api, previous) => (previous ?? HomeModel())
+            ..api = api
             ..userId = user?.id,
-          dispose: (_, model) => model.dispose(),
-          providerBuilder: (_, notifier, child) {
-            return ChangeNotifierProvider<HomeModel>.value(
-              notifier: notifier,
-              child: child,
-            );
-          },
         ),
-        ProxyProvider<AuthenticationService, LoginModel>.custom(
+        ProxyChangeNotifierProvider<AuthenticationService, LoginModel>(
           builder: (_, auth, previous) =>
-              (previous ?? LoginModel())..authenticationService = auth,
-          providerBuilder: (_, login, child) =>
-              ChangeNotifierProvider<LoginModel>.value(
-                notifier: login,
-                child: child,
-              ),
-        )
+              (previous ?? LoginModel())..authenticationService = auth),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
         routes: {
-          // `initialRoute` is not enough
-          // the route `/` will always be pushed. So `/` should handle displaying LoginView internally
-          // see https://stackoverflow.com/questions/56145378/why-is-initstate-called-twice/56145478#56145478
-          '/': (context) => Provider.of<User>(context)?.id != null
+          '/': (context) => Provider.of<User>(context) != null
               ? const HomeView()
               : const LoginView(),
           '/login': (_) => const LoginView(),

@@ -51,8 +51,4 @@ class Api {
 
     return comments;
   }
-
-  void dispose() {
-    _client.close();
-  }
 }
