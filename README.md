@@ -7,6 +7,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**011 - Network Sensitive UI in Flutter using Provider and Connectivity** \[  [Written](https://www.filledstacks.com/post/make-your-flutter-app-network-aware-using-provider-and-connectivity-status/) \] \[ [Video](https://youtu.be/u9O8NOnQi_A) \] - In this tutorial I create a network sensitive UI that shows different states based on the status of your connection.
+
 **010 - Flutter Architecture - A complete guide to Provider** \[ [Written](https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide) \] \[ [Video](https://youtu.be/kDEflMYTFlk) \] - In this tutorial / guide I cover the complete architecture to build a production app using the provider package for state management.
 
 **009 - Build a User Feedback app using Flutter and Firebase** \[ [Written](https://www.filledstacks.com/post/build-a-user-feedback-app-in-flutter-and-firebase) \] \[ [Video](https://youtu.be/g5-ZkfN2mvY) \] - In this tutorial I guide you through the steps to implement a real time user feedback app using firebase, flutter and the ScopedModel architecture.
