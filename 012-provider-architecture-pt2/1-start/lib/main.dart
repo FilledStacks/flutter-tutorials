@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:network_aware/services/connectivity_service.dart';
-import 'package:network_aware/ui/home.dart';
 import 'package:provider/provider.dart';
+import 'package:provider_architecutre/core/services/authentication_service.dart';
+import 'package:provider_architecutre/locator.dart';
+import 'package:provider_architecutre/ui/router.dart';
 
-import 'enums/connectivity_status.dart';
+import 'core/models/user.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  setupLocator();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<ConnectivityStatus>(
-      builder: (context) => ConnectivityService().connectionStatusController,
-      child: MaterialApp(
-        title: 'Connectivity Aware UI',
-        theme: ThemeData(
-            textTheme: Theme.of(context)
-                .textTheme
-                .apply(bodyColor: Colors.white, displayColor: Colors.white)),
-        home: HomeView(),
-      ),
+    return  StreamProvider<User>(
+          initialData: User.initial(),
+          builder: (context) => locator<AuthenticationService>().userController,
+          child: MaterialApp(
+            title: 'Flutter Demo',
+            theme: ThemeData(),
+            initialRoute: 'login',
+            onGenerateRoute: Router.generateRoute,
+          ),
     );
   }
 }

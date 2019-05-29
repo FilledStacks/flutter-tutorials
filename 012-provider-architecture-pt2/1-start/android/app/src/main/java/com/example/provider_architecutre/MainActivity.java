@@ -1,4 +1,4 @@
-package com.example.network_aware;
+package com.example.provider_architecutre;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

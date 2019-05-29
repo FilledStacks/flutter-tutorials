@@ -1,3 +1,3 @@
-# Netowrk Aware UI
+# Provider + Get_it Architecture
 
-This is the starting project for [this tutorial](https://youtu.be/u9O8NOnQi_A) on Network Aware widgets in Flutter.
+This is the final result of [this tutorial](https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide) where we setup a Flutter app architecture using the Provider package.
