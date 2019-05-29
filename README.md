@@ -7,6 +7,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**012 - Flutter Provider - Sharing Data Between Models using Services** \[ [Written](https://www.filledstacks.com/post/flutter-provider-architecture-sharing-data-across-your-models/) \] \[ [Video](https://youtu.be/dnW0NunWBTM) \] - In this tutorial I expand on my previous tutorial showing how you share data between models using services.
+
 **011 - Network Sensitive UI in Flutter using Provider and Connectivity** \[  [Written](https://www.filledstacks.com/post/make-your-flutter-app-network-aware-using-provider-and-connectivity-status/) \] \[ [Video](https://youtu.be/u9O8NOnQi_A) \] - In this tutorial I create a network sensitive UI that shows different states based on the status of your connection.
 
 **010 - Flutter Architecture - A complete guide to Provider** \[ [Written](https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide) \] \[ [Video](https://youtu.be/kDEflMYTFlk) \] - In this tutorial / guide I cover the complete architecture to build a production app using the provider package for state management.
@@ -17,7 +19,7 @@ Please clone and star this repo to stay up to date on changes.
 
 **007 - Flutter Architecture - A complete guide to the ScopedModel architecture** \[ [Written](https://www.filledstacks.com/post/flutter-architecture-scoped-model-implementation-guide) \] \[ [Video](https://youtu.be/JsjDLHxGz4M) \]  \[ [AppSkeletons](https://www.appskeletons.com/) \]- In this tutorial we'll lay the foundation to develop an application using Flutter and ScopedModel that's easy to maintain and extend. 
 
-**006 - Flutter + (Smart)Flare - Building a Gooey side menu** \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/006-flare-drawer) \] \[ [Video](https://youtu.be/fZuLh-oc5Ao) \] \[ [Animation](https://www.2dimensions.com/a/danemackier/files/flare/slideout-menu/preview) \] \[ [Written (code only)](https://www.filledstacks.com/post/flare-and-flutter-build-a-super-cool-gooey-slideout-menu) \] - In this tutorial I go over the process of building a slideout menu in Flare. Then importing into Flutter and using SmartFlare to add some interactive functionality to it. 
+**006 - Flutter + (Smart)Flare - Building a Gooey side menu** \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/006-flare-drawer) \] \[ [Video](https://youtu.be/fZuLh-oc5Ao) \] \[ [Animation](https://www.2dimensions.com/a/danemackier/files/flare/slideout-menu/preview) \] \[ [Written (code only)](https://www.filledstacks.com/post/flare-and-flutter-build-a-super-cool-gooey-slideout-menu) \] - In this tutorial I go over the process of building a slide out menu in Flare. Then importing into Flutter and using SmartFlare to add some interactive functionality to it. 
 
 **005 - Overflown Stacks - A Guide to basic navigation in Flutter using Navigator** \[ [Video](https://youtu.be/DlArCl8jvlo) \]  \[ [Written](https://www.filledstacks.com/post/flutter-navigation-cheatsheet-a-guide-to-the-navigator) \] \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/005-basic-navigation) \] - This repo contains an implementation of basic navigation using the code snippets defined in the guide.
 
