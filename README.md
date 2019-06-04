@@ -3,6 +3,8 @@ The repo contains the source code for all the written tutorials by Filledstacks.
 
 All Tutorials plus additional snippets and shorter posts can be found on the [Official FilledStacks website](https://www.filledstacks.com/). 
 
+<a href='https://ko-fi.com/L4L5WN7R' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
