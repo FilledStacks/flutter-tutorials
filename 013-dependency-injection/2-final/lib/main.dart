@@ -1,8 +1,13 @@
-import 'package:dependency_injection/app_info.dart';
+import 'package:dependency_injection/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'app_info.dart';
+import 'locator.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  setupLocator();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -10,11 +15,13 @@ class MyApp extends StatelessWidget {
     return Provider(
       builder: (context) => AppInfo(),
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Dependency Injection',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(),
+        home: Scaffold(
+          body: HomeView(),
+        ),
       ),
     );
   }

@@ -1,3 +1,3 @@
 class AppInfo {
-  String welcomeMessage = "Hi there, welcome to the FilledStacks";
+  String get welcomeMessage => 'Hello from FilledStacks';
 }
