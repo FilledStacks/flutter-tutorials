@@ -58,9 +58,9 @@ class LikeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // We have access to it anywhere in the app with this simple call
-    var appInfo = Provider.of(context);
+    var appInfo = Provider.of<AppInfo>(context); 
     return Container(
-      
+      child: Text(appInfo.welcomeMessage),
     );
   }
 }
