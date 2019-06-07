@@ -9,6 +9,9 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+
+**013 - Flutter Dependency Injection for Beginners** \[ [Written](https://www.filledstacks.com/post/flutter-dependency-injection-a-beginners-guide/) \] \[ [Video](https://youtu.be/vBT-FhgMaWM) \] - In this tutorial I explain what dependency injection is in plain english and show three ways of implementing it in Flutter.
+
 **012 - Flutter Provider - Sharing Data Between Models using Services** \[ [Written](https://www.filledstacks.com/post/flutter-provider-architecture-sharing-data-across-your-models/) \] \[ [Video](https://youtu.be/dnW0NunWBTM) \] - In this tutorial I expand on my previous tutorial showing how you share data between models using services.
 
 **011 - Network Sensitive UI in Flutter using Provider and Connectivity** \[  [Written](https://www.filledstacks.com/post/make-your-flutter-app-network-aware-using-provider-and-connectivity-status/) \] \[ [Video](https://youtu.be/u9O8NOnQi_A) \] - In this tutorial I create a network sensitive UI that shows different states based on the status of your connection.
