@@ -14,8 +14,8 @@ class _LoginViewState extends State<LoginView> {
   final TextEditingController _controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return BaseWidget<LoginNotifier>(
-      notifier: LoginNotifier(authenticationService: Provider.of(context)),
+    return BaseWidget<LoginViewModel>(
+      model: LoginViewModel(authenticationService: Provider.of(context)),
       builder: (context, model, child) => Scaffold(
             backgroundColor: backgroundColor,
             body: Column(

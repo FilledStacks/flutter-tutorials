@@ -10,11 +10,11 @@ class Posts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BaseWidget<PostsNotifier>(
-      notifier: PostsNotifier(
+    return BaseWidget<PostsViewModel>(
+      model: PostsViewModel(
         api: Provider.of(context),
       ),
-      onNotifierReady: (model) => model.getPosts(Provider.of<User>(context).id),
+      onModelReady: (model) => model.getPosts(Provider.of<User>(context).id),
       builder: (context, model, child) => model.busy
           ? Center(
               child: CircularProgressIndicator(),

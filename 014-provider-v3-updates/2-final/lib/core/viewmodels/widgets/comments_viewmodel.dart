@@ -3,9 +3,9 @@ import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
 import 'package:provider_arc/core/models/comment.dart';
 import 'package:provider_arc/core/services/api.dart';
 
-class CommentsNotifier extends BaseNotifier {
+class CommentsViewModel extends BaseViewModel {
   Api _api;
-  CommentsNotifier({@required Api api}) : _api = api;
+  CommentsViewModel({@required Api api}) : _api = api;
   
   List<Comment> comments;
 

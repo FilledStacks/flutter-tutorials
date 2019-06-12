@@ -1,7 +1,7 @@
 import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
 import 'package:provider_arc/core/services/authentication_service.dart';
 
-class LoginViewModel extends BaseNotifier {
+class LoginViewModel extends BaseViewModel {
   AuthenticationService _authenticationService;
 
   LoginViewModel({AuthenticationService authenticationService})
