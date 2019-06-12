@@ -1,5 +1,5 @@
 import 'package:meta/meta.dart';
-import 'package:provider_arc/core/changenotifiers/base_notifier.dart';
+import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
 import 'package:provider_arc/core/models/comment.dart';
 import 'package:provider_arc/core/services/api.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_arc/core/changenotifiers/widgets/comments_notifier.dart';
+import 'package:provider_arc/core/viewmodels/widgets/comments_viewmodel.dart';
 import 'package:provider_arc/core/models/comment.dart';
 import 'package:provider_arc/ui/shared/app_colors.dart';
 import 'package:provider_arc/ui/shared/ui_helpers.dart';

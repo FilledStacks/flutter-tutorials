@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_arc/core/changenotifiers/widgets/posts_notifier.dart';
+import 'package:provider_arc/core/viewmodels/widgets/posts_viewmodel.dart';
 import 'package:provider_arc/core/models/user.dart';
 import 'package:provider_arc/ui/widgets/base_widget.dart';
 import 'package:provider_arc/ui/widgets/postlist_item.dart';
