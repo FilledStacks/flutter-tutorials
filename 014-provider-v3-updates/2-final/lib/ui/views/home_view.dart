@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:provider_arc/core/models/user.dart';
 import 'package:provider_arc/ui/shared/app_colors.dart';
 import 'package:provider_arc/ui/shared/text_styles.dart';
 import 'package:provider_arc/ui/shared/ui_helpers.dart';
@@ -17,7 +19,7 @@ class HomeView extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(left: 20.0),
               child: Text(
-                'Welcome GET_USER_HERE',
+                'Welcome ${Provider.of<User>(context).name}',
                 style: headerStyle,
               ),
             ),

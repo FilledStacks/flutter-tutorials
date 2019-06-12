@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:provider_arc/core/models/post.dart';
+import 'package:provider_arc/core/models/user.dart';
 import 'package:provider_arc/ui/shared/app_colors.dart';
 import 'package:provider_arc/ui/shared/text_styles.dart';
 import 'package:provider_arc/ui/shared/ui_helpers.dart';
@@ -21,7 +23,7 @@ class PostView extends StatelessWidget {
             UIHelper.verticalSpaceLarge,
             Text(post.title, style: headerStyle),
             Text(
-              'by GET_USER_HERE',
+              'by ${Provider.of<User>(context).name}',
               style: TextStyle(fontSize: 9.0),
             ),
             UIHelper.verticalSpaceMedium,

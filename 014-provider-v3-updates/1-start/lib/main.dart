@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider_arc/ui/router.dart';
 
-import 'ui/views/home_view.dart';
+import 'core/constants/app_contstants.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeView(),
+      initialRoute: RoutePaths.Login,
+      onGenerateRoute: Router.generateRoute,
     );
   }
 }

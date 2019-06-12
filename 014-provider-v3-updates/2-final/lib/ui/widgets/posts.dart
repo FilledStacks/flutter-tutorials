@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_arc/core/changenotifiers/widgets/posts_notifier.dart';
+import 'package:provider_arc/core/models/user.dart';
 import 'package:provider_arc/ui/widgets/base_widget.dart';
 import 'package:provider_arc/ui/widgets/postlist_item.dart';
 
@@ -12,9 +13,8 @@ class Posts extends StatelessWidget {
     return BaseWidget<PostsNotifier>(
       notifier: PostsNotifier(
         api: Provider.of(context),
-        authenticationService: Provider.of(context),
       ),
-      onNotifierReady: (model) => model.getPosts(),
+      onNotifierReady: (model) => model.getPosts(Provider.of<User>(context).id),
       builder: (context, model, child) => model.busy
           ? Center(
               child: CircularProgressIndicator(),

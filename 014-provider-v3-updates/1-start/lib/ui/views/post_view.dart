@@ -6,6 +6,6 @@ class PostView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: backgroundColor,
-        body: Center(child: Text('Home View')));
+        body: Center(child: Text('Post View')));
   }
 }
