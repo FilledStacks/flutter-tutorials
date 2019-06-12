@@ -12,9 +12,9 @@ class Comments extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BaseWidget<CommentsNotifier>(
-      onNotifierReady: (notifier) => notifier.fetchComments(postId) ,
-      notifier: CommentsNotifier(api: Provider.of(context)),
+    return BaseWidget<CommentsViewModel>(
+      onModelReady: (notifier) => notifier.fetchComments(postId) ,
+      model: CommentsViewModel(api: Provider.of(context)),
       builder: (context, model, child) => model.busy
           ? Center(child: CircularProgressIndicator())
           : Expanded(

@@ -1,10 +1,10 @@
 import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
 import 'package:provider_arc/core/services/authentication_service.dart';
 
-class LoginNotifier extends BaseNotifier {
+class LoginViewModel extends BaseNotifier {
   AuthenticationService _authenticationService;
 
-  LoginNotifier({AuthenticationService authenticationService})
+  LoginViewModel({AuthenticationService authenticationService})
       : _authenticationService = authenticationService;
 
   Future<bool> login(String userIdText) async {

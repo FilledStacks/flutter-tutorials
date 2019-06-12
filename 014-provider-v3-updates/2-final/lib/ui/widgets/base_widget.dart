@@ -3,13 +3,13 @@ import 'package:provider/provider.dart';
 
 class BaseWidget<T extends ChangeNotifier> extends StatefulWidget {
   final Widget Function(BuildContext context, T notifier, Widget child) builder;
-  final T notifier;
-  final Function(T) onNotifierReady;
+  final T model;
+  final Function(T) onModelReady;
 
   BaseWidget({
     @required this.builder,
-    @required this.notifier,
-    this.onNotifierReady,
+    @required this.model,
+    this.onModelReady,
   });
 
   @override
@@ -21,10 +21,10 @@ class _BaseWidgetState<T extends ChangeNotifier> extends State<BaseWidget<T>> {
 
   @override
   void initState() {
-    notifier = widget.notifier;
+    notifier = widget.model;
 
-    if (widget.onNotifierReady != null) {
-      widget.onNotifierReady(notifier);
+    if (widget.onModelReady != null) {
+      widget.onModelReady(notifier);
     }
 
     super.initState();

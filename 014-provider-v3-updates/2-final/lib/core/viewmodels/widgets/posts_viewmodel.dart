@@ -3,10 +3,10 @@ import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
 import 'package:provider_arc/core/models/post.dart';
 import 'package:provider_arc/core/services/api.dart';
 
-class PostsNotifier extends BaseNotifier {
+class PostsViewModel extends BaseNotifier {
   Api _api;
 
-  PostsNotifier({
+  PostsViewModel({
     @required Api api,
   }) : _api = api;
 
