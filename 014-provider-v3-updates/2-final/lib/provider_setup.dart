@@ -4,13 +4,11 @@ import 'package:provider_arc/core/services/authentication_service.dart';
 import 'core/models/user.dart';
 import 'core/services/api.dart';
 
-List<SingleChildCloneableWidget> getProviders() {
-  return [
-    ...independentServices,
-    ...dependentServices,
-    ...uiConsumableProviders,
-  ];
-}
+List<SingleChildCloneableWidget> providers = [
+  ...independentServices,
+  ...dependentServices,
+  ...uiConsumableProviders,
+];
 
 List<SingleChildCloneableWidget> independentServices = [
   Provider.value(value: Api())
