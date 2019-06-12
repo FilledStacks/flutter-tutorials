@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+Single Responsibility
+
+"Gather together the things that change for the same reasons. Separate those things that change for different reasons." - Bob Martin
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

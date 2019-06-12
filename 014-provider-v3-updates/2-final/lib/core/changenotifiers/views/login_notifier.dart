@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:provider_arc/core/changenotifiers/base_notifier.dart';
 import 'package:provider_arc/core/services/authentication_service.dart';
 

@@ -1,12 +1,14 @@
 import 'package:provider/provider.dart';
 import 'package:provider_arc/core/services/authentication_service.dart';
 
+import 'core/models/user.dart';
 import 'core/services/api.dart';
 
 List<SingleChildCloneableWidget> getProviders() {
   return [
     ...independentServices,
-    ...dependentServices
+    ...dependentServices,
+    ...uiConsumableProviders,
   ];
 }
 
@@ -19,4 +21,8 @@ List<SingleChildCloneableWidget> dependentServices = [
     builder: (context, api, authenticationService) =>
         AuthenticationService(api: api),
   )
+];
+
+List<SingleChildCloneableWidget> uiConsumableProviders = [
+
 ];
