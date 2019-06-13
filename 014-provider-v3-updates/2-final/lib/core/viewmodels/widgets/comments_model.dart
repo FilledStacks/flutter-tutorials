@@ -10,8 +10,8 @@ class CommentsModel extends BaseViewModel {
   List<Comment> comments;
 
   Future fetchComments(int postId) async {
-    setBusy();
+    setBusy(true);
     comments = await _api.getCommentsForPost(postId);
-    setIdle();
+    setBusy(false);
   }
 }

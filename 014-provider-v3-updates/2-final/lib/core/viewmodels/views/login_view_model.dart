@@ -8,10 +8,10 @@ class LoginViewModel extends BaseViewModel {
       : _authenticationService = authenticationService;
 
   Future<bool> login(String userIdText) async {
-    setBusy();
+    setBusy(true);
     var userId = int.tryParse(userIdText);
     var success = await _authenticationService.login(userId);
-    setIdle();
+    setBusy(false);
     return success;
   }
 }

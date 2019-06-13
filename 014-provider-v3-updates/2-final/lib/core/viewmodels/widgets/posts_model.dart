@@ -13,8 +13,8 @@ class PostsModel extends BaseViewModel {
   List<Post> posts;
 
   Future getPosts(int userId) async {
-    setBusy();
+    setBusy(true);
     posts = await _api.getPostsForUser(userId);
-    setIdle();
+    setBusy(true);
   }
 }
