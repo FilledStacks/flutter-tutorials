@@ -1,13 +1,13 @@
-import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
+import 'package:provider_arc/core/viewmodels/base_model.dart';
 import 'package:provider_arc/core/services/authentication_service.dart';
 
-class LoginButtonViewModel extends BaseViewModel {
+class LoginViewModel extends BaseViewModel {
   AuthenticationService _authenticationService;
 
-  LoginButtonViewModel({AuthenticationService authenticationService})
+  LoginViewModel({AuthenticationService authenticationService})
       : _authenticationService = authenticationService;
 
-  Future<bool> performLogin(String userIdText) async {
+  Future<bool> login(String userIdText) async {
     setBusy();
     var userId = int.tryParse(userIdText);
     var success = await _authenticationService.login(userId);

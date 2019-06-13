@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_arc/core/viewmodels/widgets/posts_viewmodel.dart';
+import 'package:provider_arc/core/viewmodels/widgets/posts_model.dart';
 import 'package:provider_arc/core/models/user.dart';
 import 'package:provider_arc/ui/widgets/base_widget.dart';
 import 'package:provider_arc/ui/widgets/postlist_item.dart';
@@ -10,8 +10,8 @@ class Posts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BaseWidget<PostsViewModel>(
-      model: PostsViewModel(
+    return BaseWidget<PostsModel>(
+      model: PostsModel(
         api: Provider.of(context),
       ),
       onModelReady: (model) => model.getPosts(Provider.of<User>(context).id),

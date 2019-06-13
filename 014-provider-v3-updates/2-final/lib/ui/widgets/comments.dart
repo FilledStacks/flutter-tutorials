@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_arc/core/viewmodels/widgets/comments_viewmodel.dart';
+import 'package:provider_arc/core/viewmodels/widgets/comments_model.dart';
 import 'package:provider_arc/core/models/comment.dart';
 import 'package:provider_arc/ui/shared/app_colors.dart';
 import 'package:provider_arc/ui/shared/ui_helpers.dart';
@@ -12,9 +12,9 @@ class Comments extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BaseWidget<CommentsViewModel>(
+    return BaseWidget<CommentsModel>(
       onModelReady: (notifier) => notifier.fetchComments(postId) ,
-      model: CommentsViewModel(api: Provider.of(context)),
+      model: CommentsModel(api: Provider.of(context)),
       builder: (context, model, child) => model.busy
           ? Center(child: CircularProgressIndicator())
           : Expanded(

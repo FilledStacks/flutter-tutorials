@@ -1,11 +1,11 @@
 import 'package:meta/meta.dart';
-import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
+import 'package:provider_arc/core/viewmodels/base_model.dart';
 import 'package:provider_arc/core/models/comment.dart';
 import 'package:provider_arc/core/services/api.dart';
 
-class CommentsViewModel extends BaseViewModel {
+class CommentsModel extends BaseViewModel {
   Api _api;
-  CommentsViewModel({@required Api api}) : _api = api;
+  CommentsModel({@required Api api}) : _api = api;
   
   List<Comment> comments;
 

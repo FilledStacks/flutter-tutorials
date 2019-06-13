@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_arc/core/viewmodels/views/login_viewmodel.dart';
+import 'package:provider_arc/core/viewmodels/views/login_view_model.dart';
 import 'package:provider_arc/ui/shared/app_colors.dart';
 import 'package:provider_arc/ui/widgets/base_widget.dart';
 import 'package:provider_arc/ui/widgets/login_header.dart';

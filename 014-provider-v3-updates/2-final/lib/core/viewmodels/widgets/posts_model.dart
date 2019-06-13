@@ -1,12 +1,12 @@
 import 'package:meta/meta.dart';
-import 'package:provider_arc/core/viewmodels/base_viewmodel.dart';
+import 'package:provider_arc/core/viewmodels/base_model.dart';
 import 'package:provider_arc/core/models/post.dart';
 import 'package:provider_arc/core/services/api.dart';
 
-class PostsViewModel extends BaseViewModel {
+class PostsModel extends BaseViewModel {
   Api _api;
 
-  PostsViewModel({
+  PostsModel({
     @required Api api,
   }) : _api = api;
 
