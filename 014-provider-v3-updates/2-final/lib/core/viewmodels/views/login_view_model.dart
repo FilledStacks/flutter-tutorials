@@ -1,13 +1,13 @@
 import 'package:flutter/widgets.dart';
 import 'package:provider_arc/core/services/authentication_service.dart';
-
-import '../base_model.dart';
+import 'package:provider_arc/core/viewmodels/base_model.dart';
 
 class LoginViewModel extends BaseModel {
   AuthenticationService _authenticationService;
 
-  LoginViewModel({@required AuthenticationService authenticationService})
-      : _authenticationService = authenticationService;
+  LoginViewModel({
+    @required AuthenticationService authenticationService,
+  }) : _authenticationService = authenticationService;
 
   Future<bool> login(String userIdText) async {
     setBusy(true);

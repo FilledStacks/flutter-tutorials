@@ -4,8 +4,7 @@ import 'package:provider_arc/core/models/comment.dart';
 import 'package:provider_arc/core/viewmodels/widgets/comments_model.dart';
 import 'package:provider_arc/ui/shared/app_colors.dart';
 import 'package:provider_arc/ui/shared/ui_helpers.dart';
-
-import '../base_widget.dart';
+import 'package:provider_arc/ui/views/base_widget.dart';
 
 class Comments extends StatelessWidget {
   final int postId;
@@ -14,18 +13,19 @@ class Comments extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseWidget<CommentsModel>(
-      onModelReady: (notifier) => notifier.fetchComments(postId),
-      model: CommentsModel(api: Provider.of(context)),
-      builder: (context, model, child) => model.busy
-          ? Center(child: CircularProgressIndicator())
-          : Expanded(
-              child: ListView(
-                children: model.comments
-                    .map((comment) => CommentItem(comment))
-                    .toList(),
-              ),
-            ),
-    );
+        onModelReady: (model) => model.fetchComments(postId),
+        model: CommentsModel(api: Provider.of(context)),
+        builder: (context, model, child) => model.busy
+            ? Center(
+                child: CircularProgressIndicator(),
+              )
+            : Expanded(
+                child: ListView.builder(
+                  itemCount: model.comments.length,
+                  itemBuilder: (context, index) =>
+                      CommentItem(model.comments[index]),
+                ),
+              ));
   }
 }
 
