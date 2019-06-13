@@ -6,6 +6,7 @@ import 'package:provider_arc/ui/shared/app_colors.dart';
 import 'package:provider_arc/ui/shared/text_styles.dart';
 import 'package:provider_arc/ui/shared/ui_helpers.dart';
 import 'package:provider_arc/ui/widgets/comments.dart';
+import 'package:provider_arc/ui/widgets/posts.dart';
 
 class PostView extends StatelessWidget {
   final Post post;

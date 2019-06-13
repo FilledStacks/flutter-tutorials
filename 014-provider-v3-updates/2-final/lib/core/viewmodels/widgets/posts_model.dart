@@ -1,9 +1,10 @@
 import 'package:meta/meta.dart';
-import 'package:provider_arc/core/viewmodels/base_model.dart';
 import 'package:provider_arc/core/models/post.dart';
 import 'package:provider_arc/core/services/api.dart';
 
-class PostsModel extends BaseViewModel {
+import '../base_model.dart';
+
+class PostsModel extends BaseModel {
   Api _api;
 
   PostsModel({
@@ -15,6 +16,6 @@ class PostsModel extends BaseViewModel {
   Future getPosts(int userId) async {
     setBusy(true);
     posts = await _api.getPostsForUser(userId);
-    setBusy(true);
+    setBusy(false);
   }
 }

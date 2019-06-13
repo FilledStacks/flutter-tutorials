@@ -7,12 +7,11 @@ import 'package:provider_arc/ui/shared/ui_helpers.dart';
 import 'package:provider_arc/ui/widgets/posts.dart';
 
 class HomeView extends StatelessWidget {
-  @override
+    @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
-      body: Center(
-        child: Column(
+      body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             UIHelper.verticalSpaceLarge,
@@ -31,7 +30,6 @@ class HomeView extends StatelessWidget {
             Expanded(child: Posts()),
           ],
         ),
-      ),
     );
   }
 }

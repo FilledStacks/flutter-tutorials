@@ -3,10 +3,11 @@ import 'package:provider/provider.dart';
 import 'package:provider_arc/provider_setup.dart';
 import 'package:provider_arc/ui/router.dart';
 
+import 'core/constants/app_contstants.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        initialRoute: 'login',
+        initialRoute: RoutePaths.Login,
         onGenerateRoute: Router.generateRoute,
       ),
     );
