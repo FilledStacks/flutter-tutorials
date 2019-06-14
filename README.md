@@ -9,6 +9,7 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**014 - Flutter Provider V3 Architecture using ProxyProvider** \[ [Written](https://www.filledstacks.com/post/flutter-provider-v3-architecture) \] \[ [Video](https://youtu.be/VgrK_LlQRJ4) \] - In this tutorial we implement a previously built app using Provider only and show how an architecture with dependency injection can be setup using the ProxyProvider.
 
 **013 - Flutter Dependency Injection for Beginners** \[ [Written](https://www.filledstacks.com/post/flutter-dependency-injection-a-beginners-guide/) \] \[ [Video](https://youtu.be/vBT-FhgMaWM) \] - In this tutorial I explain what dependency injection is in plain english and show three ways of implementing it in Flutter.
 
