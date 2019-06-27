@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**016 - Flutter Navigation using Named Routing** \[ [Written](https://www.filledstacks.com/post/flutter-navigation-cheatsheet-a-guide-to-named-routing) \] \[ [Video](https://youtu.be/YXDFlpdpp3g) \] - This tutorial guides you through everything you need to know about navigation in Flutter using named routing.
+ 
 **015 - Animated SplashScreen with Flare** \[ [Written](https://www.filledstacks.com/post/flutter-animated-splash-screen-with-flare) \] \[ [Video](https://youtu.be/4PgdFYcQpuc) \] - This tutorial shows how to setup your splash following up with a nice intro animation built in Flare.
 
 **014 - Flutter Provider V3 Architecture using ProxyProvider** \[ [Written](https://www.filledstacks.com/post/flutter-provider-v3-architecture) \] \[ [Video](https://youtu.be/VgrK_LlQRJ4) \] - In this tutorial we implement a previously built app using Provider only and show how an architecture with dependency injection can be setup using the ProxyProvider.
