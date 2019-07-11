@@ -9,6 +9,10 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**018 - Bottom Sheet Guide in Flutter** \[ [Written](https://www.filledstacks.com/post/bottom-sheet-guide-in-flutter) \] \[ [Video](https://youtu.be/zXFcceP0JbY) \] - This tutorial goes over everything you need to know to effectively make use of the BottomSheet in your app.
+
+**017 - Better Logging in Flutter**  \[ [Written - Effective Logging](https://www.filledstacks.com/post/flutter-logging-a-guide-to-use-it-effectively) \] \[ [Written - Setup Guide](https://www.filledstacks.com/snippet/a-guide-to-setting-up-better-logging-in-flutter) \] \[ [Video](https://youtu.be/c5CwHXj21xw) \] - This set of tutorials cover logging in Flutter. It shows you how to set it up, and it also gives you guidelines on where to use it and what to log when using it.
+
 **016 - Flutter Navigation using Named Routing** \[ [Written](https://www.filledstacks.com/post/flutter-navigation-cheatsheet-a-guide-to-named-routing) \] \[ [Video](https://youtu.be/YXDFlpdpp3g) \] - This tutorial guides you through everything you need to know about navigation in Flutter using named routing.
  
 **015 - Animated SplashScreen with Flare** \[ [Written](https://www.filledstacks.com/post/flutter-animated-splash-screen-with-flare) \] \[ [Video](https://youtu.be/4PgdFYcQpuc) \] - This tutorial shows how to setup your splash following up with a nice intro animation built in Flare.
