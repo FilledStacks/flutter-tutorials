@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**019 - Flutter animation Guide | Deep Dive | Flutter Hooks and Flutter Sequence Builder** \[ [Written](https://www.filledstacks.com/post/flutter-animation-guide-flutter-hooks-animation-flutter-animation-sequences/) \] \[ [Video](https://youtu.be/mdhoIQqS2z0) \] - This tutorial goes over every way you can organise your animation code using the provided flutter functionality. Then we go to Flutter hooks to help reduce the code and we look at the sequence builder to create some combined animations.
+
 **018 - Bottom Sheet Guide in Flutter** \[ [Written](https://www.filledstacks.com/post/bottom-sheet-guide-in-flutter) \] \[ [Video](https://youtu.be/zXFcceP0JbY) \] - This tutorial goes over everything you need to know to effectively make use of the BottomSheet in your app.
 
 **017 - Better Logging in Flutter**  \[ [Written - Effective Logging](https://www.filledstacks.com/post/flutter-logging-a-guide-to-use-it-effectively) \] \[ [Written - Setup Guide](https://www.filledstacks.com/snippet/a-guide-to-setting-up-better-logging-in-flutter) \] \[ [Video](https://youtu.be/c5CwHXj21xw) \] - This set of tutorials cover logging in Flutter. It shows you how to set it up, and it also gives you guidelines on where to use it and what to log when using it.
