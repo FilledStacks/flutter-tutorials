@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**020 - A Guide to using Futures** \[ [Video](https://youtu.be/DAS0EQuM-oU) \] \[ [Written](https://www.filledstacks.com/post/complete-beginners-guide-to-futures) \] - This tutorial goes over the functionality provided by Futures and how to use it.
+
 **019 - Flutter animation Guide | Deep Dive | Flutter Hooks and Flutter Sequence Builder** \[ [Written](https://www.filledstacks.com/post/flutter-animation-guide-flutter-hooks-animation-flutter-animation-sequences/) \] \[ [Video](https://youtu.be/mdhoIQqS2z0) \] - This tutorial goes over every way you can organise your animation code using the provided flutter functionality. Then we go to Flutter hooks to help reduce the code and we look at the sequence builder to create some combined animations.
 
 **018 - Bottom Sheet Guide in Flutter** \[ [Written](https://www.filledstacks.com/post/bottom-sheet-guide-in-flutter) \] \[ [Video](https://youtu.be/zXFcceP0JbY) \] - This tutorial goes over everything you need to know to effectively make use of the BottomSheet in your app.
