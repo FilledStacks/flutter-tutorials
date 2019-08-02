@@ -1,3 +1,5 @@
+import 'package:dialog_manager/datamodels/alert_request.dart';
+import 'package:dialog_manager/datamodels/alert_response.dart';
 import 'package:dialog_manager/locator.dart';
 import 'package:dialog_manager/services/dialog_service.dart';
 import 'package:flutter/material.dart';
@@ -24,17 +26,18 @@ class _DialogManagerState extends State<DialogManager> {
     return widget.child;
   }
 
-  void _showDialog() {
+  void _showDialog(AlertRequest request) {
     Alert(
         context: context,
-        title: "FilledStacks",
-        desc: "Flutter is awesome.",
-        closeFunction: () => _dialogService.dialogComplete(),
+        title: request.title,
+        desc: request.description,
+        closeFunction: () =>
+            _dialogService.dialogComplete(AlertResponse(confirmed: false)),
         buttons: [
           DialogButton(
-            child: Text('OkieDoke'),
+            child: Text(request.buttonTitle),
             onPressed: () {
-              _dialogService.dialogComplete();
+              _dialogService.dialogComplete(AlertResponse(confirmed: true));
               Navigator.of(context).pop();
             },
           )
