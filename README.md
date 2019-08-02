@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**021 - Build an architecture for your dialog management in Flutter** \[ [Video]() \] \[ [Written]() \] - This tutorial guides you on how to create a dialog manager in Flutter that allows you to show and access information from dialogs from your business logic.
+
 **020 - A Guide to using Futures** \[ [Video](https://youtu.be/DAS0EQuM-oU) \] \[ [Written](https://www.filledstacks.com/post/complete-beginners-guide-to-futures) \] - This tutorial goes over the functionality provided by Futures and how to use it.
 
 **019 - Flutter animation Guide | Deep Dive | Flutter Hooks and Flutter Sequence Builder** \[ [Written](https://www.filledstacks.com/post/flutter-animation-guide-flutter-hooks-animation-flutter-animation-sequences/) \] \[ [Video](https://youtu.be/mdhoIQqS2z0) \] - This tutorial goes over every way you can organise your animation code using the provided flutter functionality. Then we go to Flutter hooks to help reduce the code and we look at the sequence builder to create some combined animations.
