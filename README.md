@@ -9,7 +9,7 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
-**021 - Build an architecture for your dialog management in Flutter** \[ [Video]() \] \[ [Written]() \] - This tutorial guides you on how to create a dialog manager in Flutter that allows you to show and access information from dialogs from your business logic.
+**021 - Build an architecture for your dialog management in Flutter** \[ [Video](https://youtu.be/IrFU_BrCWnE) \] \[ [Written](https://www.filledstacks.com/post/manager-your-flutter-dialogs-with-a-dialog-manager) \] - This tutorial guides you on how to create a dialog manager in Flutter that allows you to show and access information from dialogs from your business logic.
 
 **020 - A Guide to using Futures** \[ [Video](https://youtu.be/DAS0EQuM-oU) \] \[ [Written](https://www.filledstacks.com/post/complete-beginners-guide-to-futures) \] - This tutorial goes over the functionality provided by Futures and how to use it.
 
