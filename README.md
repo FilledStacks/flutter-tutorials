@@ -54,6 +54,4 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tools by FilledStacks
 
-[AppSkeletons](https://www.appskeletons.com/): Create your own custom template, perfectly architected and catered to your scenario. Add predefined view types and skip 2-3 days of code setup and just start developing
-
 [SmartFlare](https://pub.dartlang.org/packages/smart_flare): An extension of the already awesome Flare packages that adds interactive to FlareActors with some more functionality.
