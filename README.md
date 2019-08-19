@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**023 - Abstraction In Flutter Pt1 | How it can save hours of development time** \[ [Video](https://youtu.be/n2yGl7vJJGM) \] \[ [Written](https://www.filledstacks.com/post/develop-faster-in-flutter-using-abstraction) \] - This tutorial is part one of the abstraction series that will cover the benefits of abstraction in practical use cases. In this one we look at how using a second implementation of an interface that returns fake data can speed up your application development.
+
 **022 - Build a Lifecycle manager for Background behaviour in Flutter** \[ [Video](https://youtu.be/NfvA-7-HzYk) \] \[ [Written](https://www.filledstacks.com/post/flutter-application-life-cycle-management) \] - In this tutorial I go over how to build and hook up a LifeCycle manager to the Flutter AppLifeCycle. We use that to start and stop services within our architecture when the app enters a background state or come back to the foreground.
 
 **021 - Build an architecture for your dialog management in Flutter** \[ [Video](https://youtu.be/IrFU_BrCWnE) \] \[ [Written](https://www.filledstacks.com/post/manager-your-flutter-dialogs-with-a-dialog-manager) \] - This tutorial guides you on how to create a dialog manager in Flutter that allows you to show and access information from dialogs from your business logic.
