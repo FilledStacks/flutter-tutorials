@@ -1,14 +1,17 @@
 import 'dart:async';
 
 import 'package:abstraction_unit/datamodels/post.dart';
+import 'package:abstraction_unit/services/storage/storage_service.dart';
 import 'package:localstorage/localstorage.dart';
 
-class LocalStorageService {
+class LocalStorageService implements StorageService {
   final LocalStorage _postsStorage = new LocalStorage('postsStorage');
   final StreamController<int> _postUpdated = StreamController<int>.broadcast();
 
+  @override
   Stream<int> get postUpdateStream => _postUpdated.stream;
 
+  @override
   Future<bool> likePost(int postId, {bool unlike = false}) async {
     // Get all the current posts
     Map<String, dynamic> data = _postsStorage.getItem('user_posts');
@@ -38,6 +41,7 @@ class LocalStorageService {
     }
   }
 
+  @override
   void dispose() {
     _postUpdated.close();
   }
