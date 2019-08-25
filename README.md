@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Turorials
 
+**024 - Abstraction in Flutter Pt2 | Better unit tests using Abstraction** \[ [Video](https://youtu.be/oZW3Eb3J9s0) \] \[ [Written](https://www.filledstacks.com/post/better-unit-tests-in-flutter-using-abstraction) \] - In this tutorial we go over how using Abstraction can make your unit tests better.
+
 **023 - Abstraction In Flutter Pt1 | How it can save hours of development time** \[ [Video](https://youtu.be/n2yGl7vJJGM) \] \[ [Written](https://www.filledstacks.com/post/develop-faster-in-flutter-using-abstraction) \] - This tutorial is part one of the abstraction series that will cover the benefits of abstraction in practical use cases. In this one we look at how using a second implementation of an interface that returns fake data can speed up your application development.
 
 **022 - Build a Lifecycle manager for Background behaviour in Flutter** \[ [Video](https://youtu.be/NfvA-7-HzYk) \] \[ [Written](https://www.filledstacks.com/post/flutter-application-life-cycle-management) \] - In this tutorial I go over how to build and hook up a LifeCycle manager to the Flutter AppLifeCycle. We use that to start and stop services within our architecture when the app enters a background state or come back to the foreground.
