@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_architecutre/core/enums/viewstate.dart';
-import 'package:provider_architecutre/core/viewmodels/login_model.dart';
-import 'package:provider_architecutre/ui/shared/app_colors.dart';
-import 'package:provider_architecutre/ui/widgets/login_header.dart';
+import 'package:provider_architecture/core/enums/viewstate.dart';
+import 'package:provider_architecture/core/viewmodels/login_model.dart';
+import 'package:provider_architecture/ui/shared/app_colors.dart';
+import 'package:provider_architecture/ui/widgets/login_header.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key key}) : super(key: key);

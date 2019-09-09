@@ -1,6 +1,6 @@
-import 'package:provider_architecutre/core/enums/viewstate.dart';
-import 'package:provider_architecutre/core/models/post.dart';
-import 'package:provider_architecutre/core/services/api.dart';
+import 'package:provider_architecture/core/enums/viewstate.dart';
+import 'package:provider_architecture/core/models/post.dart';
+import 'package:provider_architecture/core/services/api.dart';
 
 import 'base_model.dart';
 
