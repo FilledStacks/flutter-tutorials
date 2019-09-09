@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:provider_architecutre/core/models/user.dart';
+import 'package:provider_architecture/core/models/user.dart';
 
 import '../../locator.dart';
 import 'api.dart';

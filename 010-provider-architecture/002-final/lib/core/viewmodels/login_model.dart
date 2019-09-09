@@ -1,6 +1,6 @@
-import 'package:provider_architecutre/core/enums/viewstate.dart';
-import 'package:provider_architecutre/core/services/authentication_service.dart';
-import 'package:provider_architecutre/core/viewmodels/base_model.dart';
+import 'package:provider_architecture/core/enums/viewstate.dart';
+import 'package:provider_architecture/core/services/authentication_service.dart';
+import 'package:provider_architecture/core/viewmodels/base_model.dart';
 
 import '../../locator.dart';
 
@@ -23,7 +23,7 @@ class LoginModel extends BaseModel {
 
     var success = await _authenticationService.login(userId);
 
-    // Handle potential error here too. 
+    // Handle potential error here too.
 
     setState(ViewState.Idle);
     return success;

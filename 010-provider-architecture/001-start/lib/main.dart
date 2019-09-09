@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider_architecutre/locator.dart';
-import 'package:provider_architecutre/ui/views/login_view.dart';
+import 'package:provider_architecture/locator.dart';
+import 'package:provider_architecture/ui/views/login_view.dart';
 
 void main() {
   setupLocator();

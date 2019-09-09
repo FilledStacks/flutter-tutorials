@@ -1,14 +1,14 @@
 import 'dart:convert';
 
-import 'package:provider_architecutre/core/models/comment.dart';
-import 'package:provider_architecutre/core/models/post.dart';
-import 'package:provider_architecutre/core/models/user.dart';
+import 'package:provider_architecture/core/models/comment.dart';
+import 'package:provider_architecture/core/models/post.dart';
+import 'package:provider_architecture/core/models/user.dart';
 import 'package:http/http.dart' as http;
 
 /// The service responsible for networking requests
 class Api {
   static const endpoint = 'https://jsonplaceholder.typicode.com';
-  
+
   var client = new http.Client();
 
   Future<User> getUserProfile(int userId) async {
@@ -43,7 +43,7 @@ class Api {
 
     // Parse into List
     var parsed = json.decode(response.body) as List<dynamic>;
-    
+
     // Loop and convert each item to a Comment
     for (var comment in parsed) {
       comments.add(Comment.fromJson(comment));

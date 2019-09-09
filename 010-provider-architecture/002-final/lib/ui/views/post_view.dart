@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_architecutre/core/models/post.dart';
-import 'package:provider_architecutre/core/models/user.dart';
-import 'package:provider_architecutre/ui/shared/app_colors.dart';
-import 'package:provider_architecutre/ui/shared/text_styles.dart';
-import 'package:provider_architecutre/ui/shared/ui_helpers.dart';
-import 'package:provider_architecutre/ui/widgets/comments.dart';
+import 'package:provider_architecture/core/models/post.dart';
+import 'package:provider_architecture/core/models/user.dart';
+import 'package:provider_architecture/ui/shared/app_colors.dart';
+import 'package:provider_architecture/ui/shared/text_styles.dart';
+import 'package:provider_architecture/ui/shared/ui_helpers.dart';
+import 'package:provider_architecture/ui/widgets/comments.dart';
 
 class PostView extends StatelessWidget {
   final Post post;
