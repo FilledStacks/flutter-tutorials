@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:provider_architecutre/core/models/comment.dart';
-import 'package:provider_architecutre/core/models/post.dart';
-import 'package:provider_architecutre/core/models/user.dart';
+import 'package:provider_architecture/core/models/comment.dart';
+import 'package:provider_architecture/core/models/post.dart';
+import 'package:provider_architecture/core/models/user.dart';
 import 'package:http/http.dart' as http;
 
 /// The service responsible for networking requests

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_architecutre/core/enums/viewstate.dart';
-import 'package:provider_architecutre/core/models/post.dart';
-import 'package:provider_architecutre/core/models/user.dart';
-import 'package:provider_architecutre/core/viewmodels/home_model.dart';
-import 'package:provider_architecutre/ui/shared/app_colors.dart';
-import 'package:provider_architecutre/ui/shared/text_styles.dart';
-import 'package:provider_architecutre/ui/shared/ui_helpers.dart';
-import 'package:provider_architecutre/ui/widgets/postlist_item.dart';
+import 'package:provider_architecture/core/enums/viewstate.dart';
+import 'package:provider_architecture/core/models/post.dart';
+import 'package:provider_architecture/core/models/user.dart';
+import 'package:provider_architecture/core/viewmodels/home_model.dart';
+import 'package:provider_architecture/ui/shared/app_colors.dart';
+import 'package:provider_architecture/ui/shared/text_styles.dart';
+import 'package:provider_architecture/ui/shared/ui_helpers.dart';
+import 'package:provider_architecture/ui/widgets/postlist_item.dart';
 
 import 'base_view.dart';
 
@@ -26,12 +26,12 @@ class HomeView extends StatelessWidget {
              UIHelper.verticalSpaceLarge(),
              Padding(
               padding: const EdgeInsets.only(left: 20.0),
-              child: Text('Welcome ${Provider.of<User>(context).name}', 
+              child: Text('Welcome ${Provider.of<User>(context).name}',
               style: headerStyle,),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20.0),
-              child: Text('Here are all your posts', 
+              child: Text('Here are all your posts',
               style: subHeaderStyle),
             ),
             UIHelper.verticalSpaceSmall(),

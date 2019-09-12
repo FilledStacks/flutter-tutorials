@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_architecutre/core/enums/viewstate.dart';
-import 'package:provider_architecutre/core/models/post.dart';
-import 'package:provider_architecutre/core/models/user.dart';
-import 'package:provider_architecutre/core/viewmodels/home_model.dart';
-import 'package:provider_architecutre/ui/shared/app_colors.dart';
-import 'package:provider_architecutre/ui/shared/text_styles.dart';
-import 'package:provider_architecutre/ui/shared/ui_helpers.dart';
-import 'package:provider_architecutre/ui/widgets/postlist_item.dart';
+import 'package:provider_architecture/core/enums/viewstate.dart';
+import 'package:provider_architecture/core/models/post.dart';
+import 'package:provider_architecture/core/models/user.dart';
+import 'package:provider_architecture/core/viewmodels/home_model.dart';
+import 'package:provider_architecture/ui/shared/app_colors.dart';
+import 'package:provider_architecture/ui/shared/text_styles.dart';
+import 'package:provider_architecture/ui/shared/ui_helpers.dart';
+import 'package:provider_architecture/ui/widgets/postlist_item.dart';
 import 'package:functional_widget_annotation/functional_widget_annotation.dart';
 
 part 'home_view.g.dart';

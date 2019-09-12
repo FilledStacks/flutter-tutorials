@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_architecutre/core/services/authentication_service.dart';
-import 'package:provider_architecutre/core/viewmodels/login_model.dart';
-import 'package:provider_architecutre/ui/router.dart';
-import 'package:provider_architecutre/ui/views/home_view.dart';
-import 'package:provider_architecutre/ui/views/login_view.dart';
+import 'package:provider_architecture/core/services/authentication_service.dart';
+import 'package:provider_architecture/core/viewmodels/login_model.dart';
+import 'package:provider_architecture/ui/router.dart';
+import 'package:provider_architecture/ui/views/home_view.dart';
+import 'package:provider_architecture/ui/views/login_view.dart';
 
 import 'core/models/user.dart';
 import 'core/services/api.dart';
