@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
+**028 - Flutter Continuous Scroll** \[ [Video](https://youtu.be/rr7d3SuhLiU) \] \[ [Written](https://www.filledstacks.com/post/flutter-infinite-scroll-using-flutter-only/) \] - This tutorial goes over how to create a continuous scrolling list in Flutter using index numbers and not the scroll controller.
+
 **027 - Flutter Location Service** \[ [Video](https://youtu.be/UdBUe_NP-BI) \] \[ [Written](https://www.filledstacks.com/snippet/build-a-flutter-location-service) \] - This tutorial covers the should be common task of wrapping a set of functionality within a service. We build a location service that provides continuous updates using the Location package.
 
 **026 - Flutter stream basics. Absolute basics** \[ [Video](https://youtu.be/53jIxLiCv2E) \] \[ [Written](https://www.filledstacks.com/post/a-complete-guide-to-flutter-streams) \] - This is a short tutorial that covers the creation, usage and management of streams. I also cover how to manually create Streams using `async*` functionality.
