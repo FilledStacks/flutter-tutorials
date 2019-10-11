@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:response_architecture/ui/sizing_information.dart';
-import 'package:response_architecture/utils/ui_utils.dart';
+import 'package:responsive_architecture/ui/sizing_information.dart';
+import 'package:responsive_architecture/utils/ui_utils.dart';
 
 class BaseWidget extends StatelessWidget {
   final Widget Function(
@@ -11,14 +11,14 @@ class BaseWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
 
-    return LayoutBuilder(builder: (context, boxSizing) {
+    return LayoutBuilder(builder: (context, boxConstraints) {
       var sizingInformation = SizingInformation(
         orientation: mediaQuery.orientation,
-        deviceType: getDeviceType(mediaQuery),
+        deviceScreenType: getDeviceType(mediaQuery),
         screenSize: mediaQuery.size,
-        localWidgetSize: Size(boxSizing.maxWidth, boxSizing.maxHeight),
+        localWidgetSize:
+            Size(boxConstraints.maxWidth, boxConstraints.maxHeight),
       );
-
       return builder(context, sizingInformation);
     });
   }

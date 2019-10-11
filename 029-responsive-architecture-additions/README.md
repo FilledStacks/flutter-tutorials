@@ -1,4 +1,4 @@
-# response_architecture
+# responsive_architecture
 
 A new Flutter project.
 
