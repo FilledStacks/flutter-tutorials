@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
+**030 - Flutter Responsive UI - Part 2** \[ [Video](https://youtu.be/udsysUj-X4w) \] \[ [Written](https://www.filledstacks.com/post/building-a-responsive-ui-architecture-in-flutter/) \] - This tutorial / guide goes over how you can build a responsive UI architecture to allow for a maintainable and manageable multi platform code base.
+
 **029 - Flutter Responsive UI - Part 1** \[ [Video](https://youtu.be/z7P1OFLw4kY) \] \[ [Written](https://www.filledstacks.com/post/the-best-flutter-responsive-ui-pattern/) \] - This tutorial goes over the process of building a base widget that provides us with all the information to build a responsive UI.
 
 **028 - Flutter Continuous Scroll** \[ [Video](https://youtu.be/rr7d3SuhLiU) \] \[ [Written](https://www.filledstacks.com/post/flutter-infinite-scroll-using-flutter-only/) \] - This tutorial goes over how to create a continuous scrolling list in Flutter using index numbers and not the scroll controller.
