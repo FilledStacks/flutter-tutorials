@@ -9,6 +9,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
+**031 - Flutter Responsive UI - Part 3** \[ [Video](https://youtu.be/HUSqk0OrR7I) \] \[ [Written](https://www.filledstacks.com/post/a-responsive-ui-architecture-solution-with-provider/) \] - This tutorial goes over the process of adding Provider on top of an existing Responsive UI framework for state management.
+
 **030 - Flutter Responsive UI - Part 2** \[ [Video](https://youtu.be/udsysUj-X4w) \] \[ [Written](https://www.filledstacks.com/post/building-a-responsive-ui-architecture-in-flutter/) \] - This tutorial / guide goes over how you can build a responsive UI architecture to allow for a maintainable and manageable multi platform code base.
 
 **029 - Flutter Responsive UI - Part 1** \[ [Video](https://youtu.be/z7P1OFLw4kY) \] \[ [Written](https://www.filledstacks.com/post/the-best-flutter-responsive-ui-pattern/) \] - This tutorial goes over the process of building a base widget that provides us with all the information to build a responsive UI.
