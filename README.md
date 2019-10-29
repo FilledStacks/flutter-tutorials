@@ -7,6 +7,14 @@ All Tutorials plus additional snippets and shorter posts can be found on the [Of
 
 Please clone and star this repo to stay up to date on changes.
 
+
+## Packages by FilledStacks
+
+[SmartFlare](https://pub.dartlang.org/packages/smart_flare): An extension of the already awesome Flare packages that adds interactive to FlareActors with some more functionality.
+
+[Responsive Builder](https://pub.dev/packages/responsive_builder): A package that helps you write a readable and maintainable Responsive UI code base. Based on the [responsive UI series](https://www.youtube.com/playlist?list=PLQQBiNtFxeyJbOkeKBe_JG36gm1V2629H)
+
+
 ## Tutorials
 
 **031 - Flutter Responsive UI - Part 3** \[ [Video](https://youtu.be/HUSqk0OrR7I) \] \[ [Written](https://www.filledstacks.com/post/a-responsive-ui-architecture-solution-with-provider/) \] - This tutorial goes over the process of adding Provider on top of an existing Responsive UI framework for state management.
@@ -72,6 +80,3 @@ Please clone and star this repo to stay up to date on changes.
 **001 - Building a UI in Flutter - TikTok example:** \[ [Video](https://youtu.be/kJ2mGh5BLYk) \] \[ [Written P1](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-the-building-process) \] \[[Written P2](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-from-layout-to-polish)\] \[[Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/tik_tok_ui)\] - In this tutorial we break down the UI into Flutter Widgets, complete our layout and then tweak to get our final design to match our screenshots.
 
 
-## Tools by FilledStacks
-
-[SmartFlare](https://pub.dartlang.org/packages/smart_flare): An extension of the already awesome Flare packages that adds interactive to FlareActors with some more functionality.
