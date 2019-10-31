@@ -17,6 +17,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
+**032 - Flutter Web Development - Part 1** \[ [Video](https://youtu.be/XmBuwm-GhNc) \] \[ [Written](https://www.filledstacks.com/post/create-and-deploy-a-flutter-web-app/) \] - In this tutorial we create a Flutter web app, build a basic UI and deploy it to firestore.
+
 **031 - Flutter Responsive UI - Part 3** \[ [Video](https://youtu.be/HUSqk0OrR7I) \] \[ [Written](https://www.filledstacks.com/post/a-responsive-ui-architecture-solution-with-provider/) \] - This tutorial goes over the process of adding Provider on top of an existing Responsive UI framework for state management.
 
 **030 - Flutter Responsive UI - Part 2** \[ [Video](https://youtu.be/udsysUj-X4w) \] \[ [Written](https://www.filledstacks.com/post/building-a-responsive-ui-architecture-in-flutter/) \] - This tutorial / guide goes over how you can build a responsive UI architecture to allow for a maintainable and manageable multi platform code base.
