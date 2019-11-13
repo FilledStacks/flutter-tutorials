@@ -17,6 +17,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
+**034 - Flutter Web Development - Part 3 - Template Layouts** \[ [Video](https://youtu.be/nw2c6YI1Sb8) \] \[ [Written](https://www.filledstacks.com/post/template-layouts-and-navigation-in-flutter-web/) \] - This tutorial contains the code for a Flutter Template Layout for Web Development.
+
 **033 - Flutter Web Development - Part 2 - Responsive UI** \[ [Video](https://youtu.be/Kl69yxukBdw) \] \[ [Written](https://www.filledstacks.com/post/building-a-responsive-website-using-flutter/) \] - This guide goes over adding resopnsiveness to your Flutter web UI
 
 **032 - Flutter Web Development - Part 1** \[ [Video](https://youtu.be/XmBuwm-GhNc) \] \[ [Written](https://www.filledstacks.com/post/create-and-deploy-a-flutter-web-app/) \] - In this tutorial we create a Flutter web app, build a basic UI and deploy it to firestore.
