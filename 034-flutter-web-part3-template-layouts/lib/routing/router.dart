@@ -8,22 +8,23 @@ import 'package:the_basics/views/home/home_view.dart';
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case HomeRoute:
-      return _getPageRoute(HomeView());
+      return _getPageRoute(HomeView(), settings.name);
     case AboutRoute:
-      return _getPageRoute(AboutView());
+      return _getPageRoute(AboutView(), settings.name);
     case EpisodesRoute:
-      return _getPageRoute(EpisodesView());
+      return _getPageRoute(EpisodesView(), settings.name);
     default:
   }
 }
 
-PageRoute _getPageRoute(Widget child) {
-  return _FadeRoute(child: child);
+PageRoute _getPageRoute(Widget child, String routeName) {
+  return _FadeRoute(child: child, routeName: routeName);
 }
 
 class _FadeRoute extends PageRouteBuilder {
   final Widget child;
-  _FadeRoute({this.child})
+  final String routeName;
+  _FadeRoute({this.child, this.routeName})
       : super(
             pageBuilder: (
               BuildContext context,
@@ -31,6 +32,7 @@ class _FadeRoute extends PageRouteBuilder {
               Animation<double> secondaryAnimation,
             ) =>
                 child,
+            settings: RouteSettings(name: routeName),
             transitionsBuilder: (
               BuildContext context,
               Animation<double> animation,
@@ -42,3 +44,4 @@ class _FadeRoute extends PageRouteBuilder {
                   child: child,
                 ));
 }
+
