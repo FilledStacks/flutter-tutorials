@@ -18,20 +18,14 @@ class EpisodesList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(children: [
-      Wrap(
-        direction: Axis.horizontal,
-        alignment: WrapAlignment.start,
-        children: <Widget>[
-          ...episodes.map(
-            (episode) => EpisodeItem(
-              title: episode.title,
-              imageUrl: episode.imageUrl,
-              duration: episode.duration,
-            ),
-          )
-        ],
-      ),
-    ]);
+    return Wrap(
+      spacing: 130,
+      runSpacing: 30,
+      children: <Widget>[
+        ...episodes.map(
+          (episode) => EpisodeItem(model: episode),
+        )
+      ],
+    );
   }
 }

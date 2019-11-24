@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:the_basics/datamodels/navbar_item_model.dart';
 
 class NavBarItemMobile extends StatelessWidget {
-  final String title;
-  final IconData icon;
-  final String navigationPath;
-  const NavBarItemMobile(this.title, this.icon, this.navigationPath);
+  final NavBarItemModel model;
+  NavBarItemMobile({this.model});
 
   @override
   Widget build(BuildContext context) {
@@ -12,12 +11,12 @@ class NavBarItemMobile extends StatelessWidget {
       padding: const EdgeInsets.only(left: 30, top: 60),
       child: Row(
         children: <Widget>[
-          Icon(icon),
+          Icon(model.iconData),
           SizedBox(
             width: 30,
           ),
           Text(
-            title,
+            model.title,
             style: TextStyle(fontSize: 18),
           )
         ],

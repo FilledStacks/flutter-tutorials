@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:the_basics/datamodels/navbar_item_model.dart';
 
 class NavBarItemTabletDesktop extends StatelessWidget {
-  final String title;
-  final String navigationPath;
-  const NavBarItemTabletDesktop(this.title, this.navigationPath);
-
+  final NavBarItemModel model;
+  NavBarItemTabletDesktop({this.model});
+  
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     return Text(
-      title,
+      model.title,
       style: TextStyle(fontSize: 18),
     );
   }
