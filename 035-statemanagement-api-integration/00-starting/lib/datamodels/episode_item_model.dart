@@ -8,4 +8,9 @@ class EpisodeItemModel {
     this.duration,
     this.imageUrl,
   });
+
+  EpisodeItemModel.fromJson(Map<String, dynamic> map)
+      : title = map['title'],
+        duration = map['duration'],
+        imageUrl = map['imageUrl'];
 }

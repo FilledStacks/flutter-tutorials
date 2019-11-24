@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_basics/datamodels/episode_item.model.dart';
+import 'package:the_basics/datamodels/episode_item_model.dart';
 
 class EpisodeItem extends StatelessWidget {
   final EpisodeItemModel model;
