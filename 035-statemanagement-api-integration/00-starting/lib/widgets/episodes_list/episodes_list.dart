@@ -28,10 +28,10 @@ class EpisodesList extends StatelessWidget {
             'https://www.filledstacks.com/assets/static/034.81b85c1.52d0785.jpg'),
   ];
 
-  @override
+   @override
   Widget build(BuildContext context) {
     return Wrap(
-      spacing: 130,
+      spacing: 30,
       runSpacing: 30,
       children: <Widget>[
         ...episodes.map(

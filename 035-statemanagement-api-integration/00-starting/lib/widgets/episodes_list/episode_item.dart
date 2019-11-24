@@ -14,13 +14,13 @@ class EpisodeItem extends StatelessWidget {
       color: Colors.white,
       elevation: 2,
       child: SizedBox(
-        width: 300,
+        width: 360,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             SizedBox(
               height: 180,
-              child: Container(color: Colors.grey[300]),
+              child: Image.network(model.imageUrl, fit: BoxFit.cover,),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
