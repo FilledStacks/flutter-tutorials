@@ -10,6 +10,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Packages by FilledStacks
 
+[Provider Architecture](https://pub.dev/packages/provider_architecture): A package that provides two widgets that are commonly required when implementing the Provider Architecture as laid out by FilledStacks.
+
 [SmartFlare](https://pub.dartlang.org/packages/smart_flare): An extension of the already awesome Flare packages that adds interactive to FlareActors with some more functionality.
 
 [Responsive Builder](https://pub.dev/packages/responsive_builder): A package that helps you write a readable and maintainable Responsive UI code base. Based on the [responsive UI series](https://www.youtube.com/playlist?list=PLQQBiNtFxeyJbOkeKBe_JG36gm1V2629H)
