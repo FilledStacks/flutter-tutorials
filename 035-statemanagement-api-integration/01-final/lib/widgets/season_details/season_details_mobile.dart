@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider_architecture/provider_widget.dart';
+import 'package:provider_architecture/provider_architecture.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:the_basics/datamodels/season_details_model.dart';
 import 'package:the_basics/styles/text_styles.dart';

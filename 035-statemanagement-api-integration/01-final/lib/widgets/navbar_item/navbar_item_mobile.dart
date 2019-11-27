@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider_architecture/provider_widget.dart';
+import 'package:provider_architecture/provider_architecture.dart';
 import 'package:the_basics/datamodels/navbar_item_model.dart';
 
 class NavBarItemMobile extends ProviderWidget<NavBarItemModel> {

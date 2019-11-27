@@ -147,10 +147,10 @@ packages:
   provider_architecture:
     dependency: "direct main"
     description:
-      path: "..\\provider_architecture"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: provider_architecture
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   quiver:
     dependency: transitive
     description:

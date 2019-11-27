@@ -5,19 +5,21 @@ import 'package:the_basics/datamodels/episode_item_model.dart';
 
 class Api {
   static const String _apiEndpoint =
-      'https://us-central1-thebasics-2f123.cloudfunctions.net/thebasics';
+      'http://localhost:5000/thebasics-2f123/us-central1/thebasics/';
 
-  Future getEpisodes() async {
+  String _token;
+
+  Future<dynamic> getEpisodes() async {
     var response = await http.get('$_apiEndpoint/courseEpisodes');
-    print('getEpisodes | body:${response.body}');
 
     if (response.statusCode == 200) {
       var episodes = (json.decode(response.body) as List)
-          .map((e) => EpisodeItemModel.fromJson(e))
+          .map((episode) => EpisodeItemModel.fromJson(episode))
           .toList();
       return episodes;
     }
 
-    return 'Could not fetch episodes at this time';
+    // something wrong happened
+    return 'Could not fetch the episodes at this time';
   }
 }
