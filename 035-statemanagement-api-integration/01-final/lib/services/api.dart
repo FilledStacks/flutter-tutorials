@@ -5,9 +5,7 @@ import 'package:the_basics/datamodels/episode_item_model.dart';
 
 class Api {
   static const String _apiEndpoint =
-      'http://localhost:5000/thebasics-2f123/us-central1/thebasics/';
-
-  String _token;
+      'https://us-central1-thebasics-2f123.cloudfunctions.net/thebasics';
 
   Future<dynamic> getEpisodes() async {
     var response = await http.get('$_apiEndpoint/courseEpisodes');
