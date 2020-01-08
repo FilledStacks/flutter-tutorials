@@ -44,8 +44,12 @@ class LoginView extends StatelessWidget {
                   children: [
                     BusyButton(
                       title: 'Login',
+                      busy: model.busy,
                       onPressed: () {
-                        // TODO: Perform firebase login here
+                        model.login(
+                          email: emailController.text,
+                          password: passwordController.text,
+                        );
                       },
                     )
                   ],
