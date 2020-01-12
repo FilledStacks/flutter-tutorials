@@ -13,11 +13,16 @@ class LoginViewModel extends BaseModel {
   final DialogService _dialogService = locator<DialogService>();
   final NavigationService _navigationService = locator<NavigationService>();
 
-  Future login({@required String email, @required String password}) async {
+  Future login({
+    @required String email,
+    @required String password,
+  }) async {
     setBusy(true);
 
     var result = await _authenticationService.loginWithEmail(
-        email: email, password: password);
+      email: email,
+      password: password,
+    );
 
     setBusy(false);
 
@@ -27,7 +32,7 @@ class LoginViewModel extends BaseModel {
       } else {
         await _dialogService.showDialog(
           title: 'Login Failure',
-          description: 'Couldn\'t login at this moment. Please try again later',
+          description: 'General login failure. Please try again later',
         );
       }
     } else {
