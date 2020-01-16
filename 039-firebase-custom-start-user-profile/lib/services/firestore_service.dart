@@ -3,7 +3,7 @@ import 'package:compound/models/user.dart';
 
 class FirestoreService {
   final CollectionReference _usersCollectionReference =
-      Firestore.instance.collection("users");
+      Firestore.instance.collection('users');
 
   Future createUser(User user) async {
     try {

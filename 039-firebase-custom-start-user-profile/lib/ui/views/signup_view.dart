@@ -8,8 +8,8 @@ import 'package:compound/viewmodels/signup_view_model.dart';
 
 class SignUpView extends StatelessWidget {
   final emailController = TextEditingController();
-  final fullNameController = TextEditingController();
   final passwordController = TextEditingController();
+  final fullNameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -48,10 +48,9 @@ class SignUpView extends StatelessWidget {
               ),
               verticalSpaceSmall,
               ExpansionList<String>(
-                items: ['Admin', 'User'],
-                title: model.selectedRole,
-                onItemSelected: model.setSelectedRole,
-              ),
+                  items: ['Admin', 'User'],
+                  title: model.selectedRole,
+                  onItemSelected: model.setSelectedRole),
               verticalSpaceMedium,
               Row(
                 mainAxisSize: MainAxisSize.max,
@@ -62,10 +61,9 @@ class SignUpView extends StatelessWidget {
                     busy: model.busy,
                     onPressed: () {
                       model.signUp(
-                        email: emailController.text,
-                        password: passwordController.text,
-                        fullName: fullNameController.text,
-                      );
+                          email: emailController.text,
+                          password: passwordController.text,
+                          fullName: fullNameController.text);
                     },
                   )
                 ],

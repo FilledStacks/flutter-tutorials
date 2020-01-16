@@ -42,4 +42,8 @@ class LoginViewModel extends BaseModel {
       );
     }
   }
+
+  void navigateToSignUp() {
+    _navigationService.navigateTo(SignUpViewRoute);
+  }
 }

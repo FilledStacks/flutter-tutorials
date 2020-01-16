@@ -1,6 +1,5 @@
 import 'package:compound/constants/route_names.dart';
 import 'package:compound/locator.dart';
-import 'package:compound/models/user.dart';
 import 'package:compound/services/authentication_service.dart';
 import 'package:compound/services/dialog_service.dart';
 import 'package:compound/services/navigation_service.dart';
@@ -22,18 +21,18 @@ class SignUpViewModel extends BaseModel {
     notifyListeners();
   }
 
-  Future signUp(
-      {@required String email,
-      @required String password,
-      @required String fullName}) async {
+  Future signUp({
+    @required String email,
+    @required String password,
+    @required String fullName,
+  }) async {
     setBusy(true);
 
     var result = await _authenticationService.signUpWithEmail(
-      email: email,
-      password: password,
-      fullName: fullName,
-      role: _selectedRole,
-    );
+        email: email,
+        password: password,
+        fullName: fullName,
+        role: _selectedRole);
 
     setBusy(false);
 
