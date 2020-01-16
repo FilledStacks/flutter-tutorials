@@ -1,12 +1,12 @@
 # Flutter tutorials
+
 The repo contains the source code for all the written tutorials by Filledstacks.
 
-All Tutorials plus additional snippets and shorter posts can be found on the [Official FilledStacks website](https://www.filledstacks.com/). 
+All Tutorials plus additional snippets and shorter posts can be found on the [Official FilledStacks website](https://www.filledstacks.com/).
 
 <a href='https://ko-fi.com/L4L5WN7R' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 Please clone and star this repo to stay up to date on changes.
-
 
 ## Packages by FilledStacks
 
@@ -16,8 +16,15 @@ Please clone and star this repo to stay up to date on changes.
 
 [Responsive Builder](https://pub.dev/packages/responsive_builder): A package that helps you write a readable and maintainable Responsive UI code base. Based on the [responsive UI series](https://www.youtube.com/playlist?list=PLQQBiNtFxeyJbOkeKBe_JG36gm1V2629H)
 
-
 ## Tutorials
+
+**039 - Firebase and Flutter - Part 2 - Custom Startup Logic and User Profiles** - This tutorial goes over the process of making sure we startup on the correct view and the logic behind adding a custom user profile.
+
+**038 - Firebase and Flutter - Part 1 - Basic Authentication** \[ [Video](https://youtu.be/tKET5s_Vu-c) \] \[ [Written](https://www.filledstacks.com/post/firebase-authentication-in-flutter/) \] - This tutorial covers the setup of a firebase project and the basic functionality to perform a login / sign up using Firebase email authentication.
+
+**037 - Flutter Web Development - Part 6 - Advanced URL navigation** \[ [Video](https://youtu.be/q-n1Q98s92s) \] \[ [Written](https://www.filledstacks.com/post/flutter-web-advanced-navigation/) \] - In this video we cover URL navigation in Flutter Web that allows us to navigation within a template and pass in query parameters.
+
+**036 - Flutter Web Development - Part 5 - Hover Effects** \[ [Video](https://youtu.be/VABcKZLpvyg) \] \[ [Written](https://www.filledstacks.com/post/flutter-web-hover-and-mouse-cursor/) \] - This video goes over how to add hover effects into Flutter Web.
 
 **035 - Flutter Web Development - Part 4 - State and API integration** \[ [Video](https://youtu.be/qailF0Ut_c0) \] \[ [Written](https://www.filledstacks.com/post/flutter-api-integration/) \] - In this video we integrate the provider_architecture package and create a simple API class to fetch our data.
 
@@ -55,10 +62,10 @@ Please clone and star this repo to stay up to date on changes.
 
 **018 - Bottom Sheet Guide in Flutter** \[ [Written](https://www.filledstacks.com/post/bottom-sheet-guide-in-flutter) \] \[ [Video](https://youtu.be/zXFcceP0JbY) \] - This tutorial goes over everything you need to know to effectively make use of the BottomSheet in your app.
 
-**017 - Better Logging in Flutter**  \[ [Written - Effective Logging](https://www.filledstacks.com/post/flutter-logging-a-guide-to-use-it-effectively) \] \[ [Written - Setup Guide](https://www.filledstacks.com/snippet/a-guide-to-setting-up-better-logging-in-flutter) \] \[ [Video](https://youtu.be/c5CwHXj21xw) \] - This set of tutorials cover logging in Flutter. It shows you how to set it up, and it also gives you guidelines on where to use it and what to log when using it.
+**017 - Better Logging in Flutter** \[ [Written - Effective Logging](https://www.filledstacks.com/post/flutter-logging-a-guide-to-use-it-effectively) \] \[ [Written - Setup Guide](https://www.filledstacks.com/snippet/a-guide-to-setting-up-better-logging-in-flutter) \] \[ [Video](https://youtu.be/c5CwHXj21xw) \] - This set of tutorials cover logging in Flutter. It shows you how to set it up, and it also gives you guidelines on where to use it and what to log when using it.
 
 **016 - Flutter Navigation using Named Routing** \[ [Written](https://www.filledstacks.com/post/flutter-navigation-cheatsheet-a-guide-to-named-routing) \] \[ [Video](https://youtu.be/YXDFlpdpp3g) \] - This tutorial guides you through everything you need to know about navigation in Flutter using named routing.
- 
+
 **015 - Animated SplashScreen with Flare** \[ [Written](https://www.filledstacks.com/post/flutter-animated-splash-screen-with-flare) \] \[ [Video](https://youtu.be/4PgdFYcQpuc) \] - This tutorial shows how to setup your splash following up with a nice intro animation built in Flare.
 
 **014 - Flutter Provider V3 Architecture using ProxyProvider** \[ [Written](https://www.filledstacks.com/post/flutter-provider-v3-architecture) \] \[ [Video](https://youtu.be/VgrK_LlQRJ4) \] - In this tutorial we implement a previously built app using Provider only and show how an architecture with dependency injection can be setup using the ProxyProvider.
@@ -67,7 +74,7 @@ Please clone and star this repo to stay up to date on changes.
 
 **012 - Flutter Provider - Sharing Data Between Models using Services** \[ [Written](https://www.filledstacks.com/post/flutter-provider-architecture-sharing-data-across-your-models/) \] \[ [Video](https://youtu.be/dnW0NunWBTM) \] - In this tutorial I expand on my previous tutorial showing how you share data between models using services.
 
-**011 - Network Sensitive UI in Flutter using Provider and Connectivity** \[  [Written](https://www.filledstacks.com/post/make-your-flutter-app-network-aware-using-provider-and-connectivity-status/) \] \[ [Video](https://youtu.be/u9O8NOnQi_A) \] - In this tutorial I create a network sensitive UI that shows different states based on the status of your connection.
+**011 - Network Sensitive UI in Flutter using Provider and Connectivity** \[ [Written](https://www.filledstacks.com/post/make-your-flutter-app-network-aware-using-provider-and-connectivity-status/) \] \[ [Video](https://youtu.be/u9O8NOnQi_A) \] - In this tutorial I create a network sensitive UI that shows different states based on the status of your connection.
 
 **010 - Flutter Architecture - A complete guide to Provider** \[ [Written](https://www.filledstacks.com/post/flutter-architecture-my-provider-implementation-guide) \] \[ [Video](https://youtu.be/kDEflMYTFlk) \] - In this tutorial / guide I cover the complete architecture to build a production app using the provider package for state management.
 
@@ -75,11 +82,11 @@ Please clone and star this repo to stay up to date on changes.
 
 **008 - Building a Realtime stats monitor using Flutter and Firebase** \[ [Written](https://www.filledstacks.com/post/building-a-realtime-stats-monitor-in-flutter) \] \[ [Video](https://youtu.be/qa6A2TOqY0A) \] - In this tutorial I go over the steps for implementing a real time stats monitor for [AppSkeletons](https://www.appskeletons.com/)
 
-**007 - Flutter Architecture - A complete guide to the ScopedModel architecture** \[ [Written](https://www.filledstacks.com/post/flutter-architecture-scoped-model-implementation-guide) \] \[ [Video](https://youtu.be/JsjDLHxGz4M) \]  \[ [AppSkeletons](https://www.appskeletons.com/) \]- In this tutorial we'll lay the foundation to develop an application using Flutter and ScopedModel that's easy to maintain and extend. 
+**007 - Flutter Architecture - A complete guide to the ScopedModel architecture** \[ [Written](https://www.filledstacks.com/post/flutter-architecture-scoped-model-implementation-guide) \] \[ [Video](https://youtu.be/JsjDLHxGz4M) \] \[ [AppSkeletons](https://www.appskeletons.com/) \]- In this tutorial we'll lay the foundation to develop an application using Flutter and ScopedModel that's easy to maintain and extend.
 
-**006 - Flutter + (Smart)Flare - Building a Gooey side menu** \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/006-flare-drawer) \] \[ [Video](https://youtu.be/fZuLh-oc5Ao) \] \[ [Animation](https://www.2dimensions.com/a/danemackier/files/flare/slideout-menu/preview) \] \[ [Written (code only)](https://www.filledstacks.com/post/flare-and-flutter-build-a-super-cool-gooey-slideout-menu) \] - In this tutorial I go over the process of building a slide out menu in Flare. Then importing into Flutter and using SmartFlare to add some interactive functionality to it. 
+**006 - Flutter + (Smart)Flare - Building a Gooey side menu** \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/006-flare-drawer) \] \[ [Video](https://youtu.be/fZuLh-oc5Ao) \] \[ [Animation](https://www.2dimensions.com/a/danemackier/files/flare/slideout-menu/preview) \] \[ [Written (code only)](https://www.filledstacks.com/post/flare-and-flutter-build-a-super-cool-gooey-slideout-menu) \] - In this tutorial I go over the process of building a slide out menu in Flare. Then importing into Flutter and using SmartFlare to add some interactive functionality to it.
 
-**005 - Overflown Stacks - A Guide to basic navigation in Flutter using Navigator** \[ [Video](https://youtu.be/DlArCl8jvlo) \]  \[ [Written](https://www.filledstacks.com/post/flutter-navigation-cheatsheet-a-guide-to-the-navigator) \] \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/005-basic-navigation) \] - This repo contains an implementation of basic navigation using the code snippets defined in the guide.
+**005 - Overflown Stacks - A Guide to basic navigation in Flutter using Navigator** \[ [Video](https://youtu.be/DlArCl8jvlo) \] \[ [Written](https://www.filledstacks.com/post/flutter-navigation-cheatsheet-a-guide-to-the-navigator) \] \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/005-basic-navigation) \] - This repo contains an implementation of basic navigation using the code snippets defined in the guide.
 
 **004 - Flutter Foundation - Handling Async behaviour - From setState to Architecture** \[ [Written](https://www.filledstacks.com/post/flutter-basics-going-from-set-state-to-architecture) \] \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/004-flutter-basics) \] \[ [Video](https://youtu.be/TZkGT8WkjdA) \] - In this tutorial I show how you to handle async functionality and all it's states starting with setState and working up to a reactive architecture using streams.
 
@@ -88,5 +95,3 @@ Please clone and star this repo to stay up to date on changes.
 **002 - Smarter Flare Animations in Flutter - An Experiment** \[ [Video](https://youtu.be/vsyjMrZa5OU) \] \[ [Written](https://www.filledstacks.com/post/reducing-boilerplate-code-in-flutter-using-flare) \] \[ [Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/002-flutter-flare-pt1) \] - In this tutorial we look at how to reduce animation boiler plate code in Flutter using some basic calculations and the Awesome Flare.
 
 **001 - Building a UI in Flutter - TikTok example:** \[ [Video](https://youtu.be/kJ2mGh5BLYk) \] \[ [Written P1](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-the-building-process) \] \[[Written P2](https://www.filledstacks.com/post/building-tik-tok-s-ui-in-flutter-from-layout-to-polish)\] \[[Source](https://github.com/FilledStacks/flutter-tutorials/tree/master/tik_tok_ui)\] - In this tutorial we break down the UI into Flutter Widgets, complete our layout and then tweak to get our final design to match our screenshots.
-
-
