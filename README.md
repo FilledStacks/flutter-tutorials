@@ -18,7 +18,7 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
-**039 - Firebase and Flutter - Part 2 - Custom Startup Logic and User Profiles** - This tutorial goes over the process of making sure we startup on the correct view and the logic behind adding a custom user profile.
+**039 - Firebase and Flutter - Part 2 - Custom Startup Logic and User Profiles** \[ [Video](https://youtu.be/d6FaV7cp_YE) \] \[ [Written](https://www.filledstacks.com/post/firebase-startup-logic-and-custom-user-profiles/) \] - This tutorial goes over the process of making sure we startup on the correct view and the logic behind adding a custom user profile.
 
 **038 - Firebase and Flutter - Part 1 - Basic Authentication** \[ [Video](https://youtu.be/tKET5s_Vu-c) \] \[ [Written](https://www.filledstacks.com/post/firebase-authentication-in-flutter/) \] - This tutorial covers the setup of a firebase project and the basic functionality to perform a login / sign up using Firebase email authentication.
 
