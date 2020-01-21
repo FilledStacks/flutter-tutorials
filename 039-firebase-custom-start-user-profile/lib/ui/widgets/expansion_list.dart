@@ -4,7 +4,7 @@ import 'package:compound/ui/shared/shared_styles.dart' as sharedStyles;
 class ExpansionList<T> extends StatefulWidget {
   final List<T> items;
   final String title;
-  final Function(T) onItemSelected;
+  final Function(dynamic) onItemSelected;
   final bool smallVersion;
   ExpansionList({
     Key key,

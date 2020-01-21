@@ -16,7 +16,7 @@ class SignUpViewModel extends BaseModel {
   String _selectedRole = 'Select a User Role';
   String get selectedRole => _selectedRole;
 
-  void setSelectedRole(String role) {
+  void setSelectedRole(dynamic role) {
     _selectedRole = role;
     notifyListeners();
   }
