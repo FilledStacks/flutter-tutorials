@@ -15,11 +15,16 @@ class CreatePostView extends StatelessWidget {
       viewModel: CreatePostViewModel(),
       builder: (context, model, child) => Scaffold(
           floatingActionButton: FloatingActionButton(
-            child: Icon(Icons.add),
+            child: !model.busy
+                ? Icon(Icons.add)
+                : CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation(Colors.white),
+                  ),
             onPressed: () {
-              // TODO: Create post
+              // TODO: Add Post
             },
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor:
+                !model.busy ? Theme.of(context).primaryColor : Colors.grey[600],
           ),
           body: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 30.0),
