@@ -9,7 +9,12 @@ class FirestoreService {
     try {
       await _usersCollectionReference.document(user.id).setData(user.toJson());
     } catch (e) {
-      return e.message;
+      // TODO: Find or create a way to repeat error handling without so much repeated code
+      if (e is PlatformException) {
+        return e.message;
+      }
+
+      return e.toString();
     }
   }
 
@@ -18,7 +23,12 @@ class FirestoreService {
       var userData = await _usersCollectionReference.document(uid).get();
       return User.fromData(userData.data);
     } catch (e) {
-      return e.message;
+      // TODO: Find or create a way to repeat error handling without so much repeated code
+      if (e is PlatformException) {
+        return e.message;
+      }
+
+      return e.toString();
     }
   }
 }

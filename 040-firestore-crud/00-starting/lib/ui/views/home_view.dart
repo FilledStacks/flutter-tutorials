@@ -16,7 +16,8 @@ class HomeView extends StatelessWidget {
               backgroundColor: Colors.white,
               floatingActionButton: FloatingActionButton(
                 backgroundColor: Theme.of(context).primaryColor,
-                child: Icon(Icons.add),
+                child:
+                    !model.busy ? Icon(Icons.add) : CircularProgressIndicator(),
                 onPressed: model.navigateToCreateView,
               ),
               body: Padding(

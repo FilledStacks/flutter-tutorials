@@ -1,11 +1,16 @@
 class Post {
   final String title;
   final String imageUrl;
-
-  Post({this.title, this.imageUrl});
+  final String userId;
+  Post({
+    @required this.userId,
+    @required this.title,
+    this.imageUrl,
+  });
 
   Map<String, dynamic> toMap() {
     return {
+      'userId': userId,
       'title': title,
       'imageUrl': imageUrl,
     };
@@ -17,6 +22,7 @@ class Post {
     return Post(
       title: map['title'],
       imageUrl: map['imageUrl'],
+      userId: map['userId'],
     );
   }
 }
