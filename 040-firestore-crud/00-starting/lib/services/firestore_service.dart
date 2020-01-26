@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:compound/models/user.dart';
+import 'package:flutter/services.dart';
 
 class FirestoreService {
   final CollectionReference _usersCollectionReference =
