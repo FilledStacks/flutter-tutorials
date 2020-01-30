@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Allow a user to read anything if they are logged in.
+    match /{document=**} {
+      allow read: if false;
+      allow write: if false;
+    }
+
+    match /posts/{postId} {
+      // Allow a user that owns the post to delete it
+      allow update: if isPostOwner();
+      allow delete: if isPostOwner() || isAdmin();
+      allow create: if isLoggedIn();
+    }
+
+    // is the user logged in
+    function isLoggedIn() {
+      return request.auth.uid != null;
+    }
+
+    // Check if the userId matches the id of the user requesting the action
+    function isPostOwner() {
+      return resource.data.userId == request.auth.uid;
+    }
+
+    // check if the current user is an admin
+    function userIsAdmin() {
+      return getUserData().userRole == 'Admin';
+    }
+
+    // Get the user data
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data
+    }
+  }
+}
