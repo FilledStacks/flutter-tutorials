@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@firebase/testing": "^0.16.6",
+    "@firebase/testing": "^0.16.7",
     "jest": "^25.1.0"
   }
 }

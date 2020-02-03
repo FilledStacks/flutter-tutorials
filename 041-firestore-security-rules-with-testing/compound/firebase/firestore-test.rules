@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // lock down the db
+    match /{document=**} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

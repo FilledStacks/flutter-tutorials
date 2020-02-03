@@ -1,59 +1,49 @@
 const { setup, teardown } = require("./helpers");
 
-describe("Safety rules", () => {
+describe("General Safety Rules", () => {
   afterEach(async () => {
     await teardown();
   });
 
-  test("read should fail to a collection", async () => {
+  test("should deny a read to the posts collection", async () => {
     const db = await setup();
-
     const postsRef = db.collection("posts");
-
     await expect(postsRef.get()).toDeny();
   });
 
-  test("write to random collection should fail even when logged in", async () => {
+  test("should deny a write to users even when logged in", async () => {
     const db = await setup({
-      uid: "danefilled1",
-      email: "dane@filledstacks.com",
-      token: {
-        email_verified: true
-      }
+      uid: "danefilled"
     });
 
-    const postsRef = db.collection("posts");
-    await expect(postsRef.get()).toDeny();
+    const usersRef = db.collection("users");
+    await expect(usersRef.add({ data: "something" })).toDeny();
   });
 });
 
-describe("Posts rules", () => {
+describe("Posts Rules", () => {
   afterEach(async () => {
     await teardown();
   });
 
-  test("Allow update and delete when user owns post", async () => {
+  test("should allow update when user owns post", async () => {
     const mockData = {
-      // Create mock document wuth a userId danefilled1
-      ["posts/id1"]: {
-        userId: "danefilled1"
+      "posts/id1": {
+        userId: "danefilled"
       },
-      // create mock document with a userId not_filledstacks
-      ["posts/id2"]: {
+      "posts/id2": {
         userId: "not_filledstacks"
       }
     };
 
-    // setup the firestore app with an auth.uid set to danefilled1
-    const db = await setup(
-      {
-        uid: "danefilled1"
-      },
-      mockData
-    );
+    const mockUser = {
+      uid: "danefilled"
+    };
+
+    const db = await setup(mockUser, mockData);
 
     const postsRef = db.collection("posts");
-    // get the docid1
+
     await expect(
       postsRef.doc("id1").update({ updated: "new_value" })
     ).toAllow();
@@ -61,74 +51,89 @@ describe("Posts rules", () => {
     await expect(postsRef.doc("id2").update({ updated: "new_value" })).toDeny();
   });
 
-  test("Allow adding a post when logged in", async () => {
-    const db = await setup({
-      uid: "danefilled1"
-    });
-
-    const postsRef = db.collection("posts");
-    await expect(postsRef.add({ title: "new post" })).toAllow();
-  });
-
-  test("Deny adding a post when not logged in", async () => {
-    const db = await setup();
-    const postsRef = db.collection("posts");
-    await expect(postsRef.add({ title: "new post" })).toDeny();
-  });
-
-  test("Allow delete when user is admin", async () => {
+  test("should allow delete when user owns post", async () => {
     const mockData = {
-      // Create mock document wuth a userId danefilled1
-      ["users/danefilled1"]: {
-        userRole: "Admin"
+      "posts/id1": {
+        userId: "danefilled"
       },
-      ["posts/id1"]: {
-        userId: "danefilled1"
-      },
-      // create mock document with a userId not_filledstacks
-      ["posts/id2"]: {
+      "posts/id2": {
         userId: "not_filledstacks"
       }
     };
 
-    // setup the firestore app with an auth.uid set to danefilled1
-    const db = await setup(
-      {
-        uid: "danefilled1"
-      },
-      mockData
-    );
+    const mockUser = {
+      uid: "danefilled"
+    };
+
+    const db = await setup(mockUser, mockData);
 
     const postsRef = db.collection("posts");
-    // get the docid1
+
+    await expect(postsRef.doc("id1").delete()).toAllow();
+
+    await expect(postsRef.doc("id2").delete()).toDeny();
+  });
+
+  test("should allow delete when user is admin", async () => {
+    const mockData = {
+      "users/filledstacks": {
+        userRole: "Admin"
+      },
+      "posts/id1": {
+        userId: "not_matching1"
+      },
+      "posts/id2": {
+        userId: "not_matching2"
+      }
+    };
+
+    const mockUser = {
+      uid: "filledstacks"
+    };
+
+    const db = await setup(mockUser, mockData);
+
+    const postsRef = db.collection("posts");
+
     await expect(postsRef.doc("id1").delete()).toAllow();
   });
 
-  test("Don't allow delete when user is a plain user", async () => {
+  test("should not allow delete for normal user", async () => {
     const mockData = {
-      // Create mock document wuth a userId danefilled1
-      ["users/not_filledstacks"]: {
+      "users/filledstacks": {
         userRole: "User"
       },
-      ["posts/id1"]: {
-        userId: "danefilled1"
+      "posts/id1": {
+        userId: "not_matching1"
       },
-      // create mock document with a userId not_filledstacks
-      ["posts/id2"]: {
-        userId: "not_filledstacks"
+      "posts/id2": {
+        userId: "not_matching2"
       }
     };
 
-    // setup the firestore app with an auth.uid set to danefilled1
-    const db = await setup(
-      {
-        uid: "not_filledstacks"
-      },
-      mockData
-    );
+    const mockUser = {
+      uid: "filledstacks"
+    };
+
+    const db = await setup(mockUser, mockData);
 
     const postsRef = db.collection("posts");
-    // get the docid1
+
     await expect(postsRef.doc("id1").delete()).toDeny();
+  });
+
+  test("should allow adding a post when logged in", async () => {
+    const db = await setup({
+      uid: "userId"
+    });
+
+    const postsRef = db.collection("posts");
+    await expect(postsRef.add({ title: "new_post" })).toAllow();
+  });
+
+  test("should deny adding a post when not logged in", async () => {
+    const db = await setup();
+    const postsRef = db.collection("posts");
+    await expect(postsRef.add({ title: "new post" })).toDeny();
   });
 });
