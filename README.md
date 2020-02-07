@@ -18,6 +18,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
+**041 - Firebase and Flutter - Part 4 - Firestore Security Rules** \[ [Video](https://youtu.be/8rRr9GnynR0) \] \[ [Written](https://www.filledstacks.com/post/firestore-security-rules-with-testing/) \] - This tutorial covers the implementation of Firestore security rules and how to test them.
+
 **040 - Firebase and Flutter - Part 3 - CRUD using Firestore** \[ [Video](https://youtu.be/1PhAPWzGaM4) \] \[ [Written](https://filledstacks.firebaseapp.com/post/firestore-crud-in-flutter/) \] - This tutorial goes over the CRUD implementation using Firestore. We Create documents, Read the collection, Delete documents and Update existing documents data through Flutter.
 
 **039 - Firebase and Flutter - Part 2 - Custom Startup Logic and User Profiles** \[ [Video](https://youtu.be/d6FaV7cp_YE) \] \[ [Written](https://www.filledstacks.com/post/firebase-startup-logic-and-custom-user-profiles/) \] - This tutorial goes over the process of making sure we startup on the correct view and the logic behind adding a custom user profile.
