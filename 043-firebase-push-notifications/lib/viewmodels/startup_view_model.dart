@@ -13,7 +13,9 @@ class StartUpViewModel extends BaseModel {
       locator<PushNotificationService>();
 
   Future handleStartUpLogic() async {
+    // Register for push notifications
     await _pushNotificationService.initialise();
+
     var hasLoggedInUser = await _authenticationService.isUserLoggedIn();
 
     if (hasLoggedInUser) {
