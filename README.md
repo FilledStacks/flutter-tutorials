@@ -18,6 +18,8 @@ Please clone and star this repo to stay up to date on changes.
 
 ## Tutorials
 
+**043 - Firebase and Flutter Part 6 - Push Notifications using Cloud Messaging** \[ [Video](https://youtu.be/Lq9-DPKWtIc) \] \[ [Written](https://www.filledstacks.com/post/push-notifications-in-flutter-using-firebase/) \] - This tutorial goes over my implementation of Push Notification in Flutter using Firebase Cloud Messaging.
+
 **042 - Firebase and Flutter - Part 5 - Firebase Cloud Storage** \[[Video](https://youtu.be/WDqi-ZUXHEo) \] \[ [Written](https://www.filledstacks.com/post/firebase-cloud-storage-in-flutter/) \] - In this tutorial we go over the implementation details of using Firebase Cloud Storage inside a Flutter application.
 
 **041 - Firebase and Flutter - Part 4 - Firestore Security Rules** \[ [Video](https://youtu.be/8rRr9GnynR0) \] \[ [Written](https://www.filledstacks.com/post/firestore-security-rules-with-testing/) \] - This tutorial covers the implementation of Firestore security rules and how to test them.
