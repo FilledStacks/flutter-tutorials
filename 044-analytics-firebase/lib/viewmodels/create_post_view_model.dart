@@ -57,8 +57,7 @@ class CreatePostViewModel extends BaseModel {
         imageFileName: storageResult.imageFileName,
       ));
 
-      await _analyticsService.logPostCreated(
-          hasImage: _selectedImage != null);
+      await _analyticsService.logPostCreated(hasImage: _selectedImage != null);
     } else {
       result = await _firestoreService.updatePost(Post(
         title: title,

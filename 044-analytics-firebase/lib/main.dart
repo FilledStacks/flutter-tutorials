@@ -19,15 +19,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Compound',
-      navigatorObservers: [
-        locator<AnalyticsService>().getAnalyticsObserver(),
-      ],
       builder: (context, child) => Navigator(
         key: locator<DialogService>().dialogNavigationKey,
         onGenerateRoute: (settings) => MaterialPageRoute(
             builder: (context) => DialogManager(child: child)),
       ),
       navigatorKey: locator<NavigationService>().navigationKey,
+      navigatorObservers: [locator<AnalyticsService>().getAnalyticsObserver()],
       theme: ThemeData(
         primaryColor: Color(0xff19c7c1),
         textTheme: Theme.of(context).textTheme.apply(
