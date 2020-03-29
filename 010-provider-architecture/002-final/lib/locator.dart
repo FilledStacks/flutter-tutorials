@@ -6,7 +6,7 @@ import 'core/viewmodels/comments_model.dart';
 import 'core/viewmodels/home_model.dart';
 import 'core/viewmodels/login_model.dart';
 
-GetIt locator = GetIt();
+GetIt locator = GetIt.instance;
 
 void setupLocator() {
   locator.registerLazySingleton(() => AuthenticationService());
