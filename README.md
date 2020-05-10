@@ -28,6 +28,10 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
+**049 - Flutter Architecture Part 2 - Stacked State Management scenarios** \[ [Video](https://youtu.be/hEy_36LPcgQ) \] \[ [Written](https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-2-stacked-statemanagement) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
+
+**048 - Flutter Architecture Part 1 - Stacked, Routing and GetIt setup** \[ [Video](https://youtu.be/DO8le1W_HqQ) \] \[ [Written](https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part1-setup) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
+
 **047 - Firebase and Flutter Part 10 - Remote Config** \[ [Video](https://youtu.be/mPghiKYKUV4) \] \[ [Written](https://www.filledstacks.com/post/remote-config-in-flutter/) \] - This tutorial goes over remote config and how to manage it in a flutter project.
 
 **046 - Firebase and Flutter Part 9 - Dynamic Links in Flutter** \[ [Video](https://youtu.be/aBrRJqrQTpQ) \] \[ [Written](https://www.filledstacks.com/post/dynamic-links-in-flutter-a-complete-guide/) \] - This tutorial covers the use of dynamic links in flutter to perform auto routing and deep linking.
