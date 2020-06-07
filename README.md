@@ -28,6 +28,10 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
+**050 - Flutter Architecture Part 3 - How to Unit test a Unit Testing intro** \[ [Video](https://youtu.be/n21w5T3jdWE) \] \[ [Written](https://www.filledstacks.com/post/how-to-unit-test-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-4-unit-testing-1) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
+
+**050 - Flutter Architecture Part 3 - Flutter Services** \[ [Video](https://youtu.be/UoZQS1bkNTw) \] \[ [Written](https://www.filledstacks.com/post/services-in-code-and-how-to-use-them-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-3-services) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
+
 **049 - Flutter Architecture Part 2 - Stacked State Management scenarios** \[ [Video](https://youtu.be/hEy_36LPcgQ) \] \[ [Written](https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-2-stacked-statemanagement) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
 
 **048 - Flutter Architecture Part 1 - Stacked, Routing and GetIt setup** \[ [Video](https://youtu.be/DO8le1W_HqQ) \] \[ [Written](https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part1-setup) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
