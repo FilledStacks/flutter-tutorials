@@ -9,22 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dapackages: ^1.1.1
 
-  cupertino_icons: ^0.1.2
-  provider: ^4.0.4
-  get_it: ^4.0.1
-  http: ^0.12.0+4
+  cupertino_icons: ^0.1.3
+  provider: ^4.1.3
+  get_it: ^4.0.2
+  http: ^0.12.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
-
 flutter:
-
   uses-material-design: true
-
-
-
-
