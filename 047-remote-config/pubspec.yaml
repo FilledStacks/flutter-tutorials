@@ -30,8 +30,9 @@ dependencies:
   get_it: ^3.0.0+1
   # provider
   provider: ^3.2.0
-  # provider architecture
-  provider_architecture: ^1.0.3
+  # Stacked Arch
+  stacked: ^1.5.4
+  stacked_services: ^0.3.1
   firebase_auth: ^0.15.3
   cloud_firestore: ^0.13.0+1
   firebase_storage: ^3.1.1
@@ -42,7 +43,6 @@ dependencies:
   firebase_analytics: ^5.0.11
   firebase_dynamic_links: ^0.5.0+11
   firebase_remote_config: ^0.3.0+3
-  
 
 dev_dependencies:
   flutter_test:

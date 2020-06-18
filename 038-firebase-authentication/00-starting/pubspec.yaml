@@ -31,8 +31,9 @@ dependencies:
   get_it: ^3.0.0+1
   # provider
   provider: ^3.2.0
-  # provider architecture
-  provider_architecture: ^1.0.3
+  # Stacked Arch
+  stacked: ^1.5.4
+  stacked_services: ^0.3.1
 
 dev_dependencies:
   flutter_test:
