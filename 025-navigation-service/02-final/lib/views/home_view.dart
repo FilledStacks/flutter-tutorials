@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      builder: (context) => HomeViewModel(),
+      create: (context) => HomeViewModel(),
       child: Consumer<HomeViewModel>(
         builder: (context, model, child) => Scaffold(
           body: Padding(

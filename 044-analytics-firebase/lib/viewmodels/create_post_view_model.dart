@@ -30,7 +30,7 @@ class CreatePostViewModel extends BaseModel {
   Future selectImage() async {
     var tempImage = await _imageSelector.selectImage();
     if (tempImage != null) {
-      _selectedImage = tempImage;
+      _selectedImage = File(tempImage.path);
       notifyListeners();
     }
   }

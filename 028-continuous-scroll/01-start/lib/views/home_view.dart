@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ChangeNotifierProvider<HomeViewModel>(
-        builder: (context) => HomeViewModel(),
+        create: (context) => HomeViewModel(),
         child: Consumer<HomeViewModel>(
           builder: (context, model, child) => ListView.builder(
               itemCount: model.items.length,

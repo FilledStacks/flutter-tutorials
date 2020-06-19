@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:provider_architecture/provider_architecture.dart';
+import 'package:stacked/stacked.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:the_basics/datamodels/season_details_model.dart';
 import 'package:the_basics/styles/text_styles.dart';
 
-class SeasonDetailsMobile extends ProviderWidget<SeasonDetailsModel> {
+class SeasonDetailsMobile extends ViewModelWidget<SeasonDetailsModel> {
   @override
   Widget build(BuildContext context, SeasonDetailsModel details) {
     return ResponsiveBuilder(

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:skeleton_watcher/models/list_item.dart';
 import 'package:skeleton_watcher/scoped_models/feedback_view_model.dart';
 import 'package:skeleton_watcher/ui/shared/font_styles.dart';
-import 'package:skeleton_watcher/ui/shared/app_colors.dart';
 import 'package:skeleton_watcher/ui/shared/ui_reducers.dart';
 import 'package:skeleton_watcher/ui/views/base_view.dart';
 import 'package:skeleton_watcher/ui/widgets/feedback_item.dart';
@@ -44,10 +42,10 @@ class FeedbackView extends StatelessWidget {
         itemBuilder: (context, itemIndex) {
           var feedbackItem = model.userFeedback[itemIndex];
           return FeedbackItem(
-            feedbackItem: feedbackItem,
-            onOpened: (feedbackId) {
-              model.markFeedbackAsRead(feedbackId: feedbackId);
-            });
+              feedbackItem: feedbackItem,
+              onOpened: (feedbackId) {
+                model.markFeedbackAsRead(feedbackId: feedbackId);
+              });
         });
   }
 

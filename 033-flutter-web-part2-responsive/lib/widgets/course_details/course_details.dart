@@ -9,16 +9,16 @@ class CourseDetails extends StatelessWidget {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         var textAlignment =
-            sizingInformation.deviceScreenType == DeviceScreenType.Desktop
+            sizingInformation.deviceScreenType == DeviceScreenType.desktop
                 ? TextAlign.left
                 : TextAlign.center;
         double titleSize =
-            sizingInformation.deviceScreenType == DeviceScreenType.Mobile
+            sizingInformation.deviceScreenType == DeviceScreenType.mobile
                 ? 50
                 : 80;
 
         double descriptionSize =
-            sizingInformation.deviceScreenType == DeviceScreenType.Mobile
+            sizingInformation.deviceScreenType == DeviceScreenType.mobile
                 ? 16
                 : 21;
 
