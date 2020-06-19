@@ -2,7 +2,7 @@ import 'package:compound/ui/shared/ui_helpers.dart';
 import 'package:compound/ui/widgets/input_field.dart';
 import 'package:compound/viewmodels/create_post_view_model.dart';
 import 'package:flutter/material.dart';
-import 'package:provider_architecture/provider_architecture.dart';
+import 'package:stacked/stacked.dart';
 
 class CreatePostView extends StatelessWidget {
   final titleController = TextEditingController();
@@ -11,8 +11,8 @@ class CreatePostView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ViewModelProvider<CreatePostViewModel>.withConsumer(
-      viewModel: CreatePostViewModel(),
+    return ViewModelBuilder<CreatePostViewModel>.reactive(
+      viewModelBuilder: () => CreatePostViewModel(),
       builder: (context, model, child) => Scaffold(
           floatingActionButton: FloatingActionButton(
             child: !model.busy

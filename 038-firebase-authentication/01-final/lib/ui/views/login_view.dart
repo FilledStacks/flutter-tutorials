@@ -3,7 +3,7 @@ import 'package:compound/ui/widgets/busy_button.dart';
 import 'package:compound/ui/widgets/input_field.dart';
 import 'package:compound/ui/widgets/text_link.dart';
 import 'package:flutter/material.dart';
-import 'package:provider_architecture/provider_architecture.dart';
+import 'package:stacked/stacked.dart';
 import 'package:compound/viewmodels/login_view_model.dart';
 
 class LoginView extends StatelessWidget {
@@ -12,8 +12,8 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ViewModelProvider<LoginViewModel>.withConsumer(
-      viewModel: LoginViewModel(),
+    return ViewModelBuilder<LoginViewModel>.reactive(
+      viewModelBuilder: () => LoginViewModel(),
       builder: (context, model, child) => Scaffold(
           backgroundColor: Colors.white,
           body: Padding(

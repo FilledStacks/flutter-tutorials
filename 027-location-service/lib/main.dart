@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamProvider<UserLocation>(
-        builder: (context) => LocationService().locationStream,
+        create: (context) => LocationService().locationStream,
         child: MaterialApp(title: 'Flutter Demo', home: HomeView()));
   }
 }
