@@ -11,7 +11,7 @@ TextStyle titleTextStyle(DeviceScreenType deviceScreenType) {
 /// Return the style for description text on a page based on the [deviceScreenType] passed in.
 TextStyle descriptionTextStyle(DeviceScreenType deviceScreenType) {
   double descriptionSize =
-      deviceScreenType == DeviceScreenType.Mobile ? 16 : 21;
+      deviceScreenType == DeviceScreenType.mobile ? 16 : 21;
 
   return TextStyle(
     fontSize: descriptionSize,

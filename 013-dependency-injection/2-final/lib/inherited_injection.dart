@@ -10,11 +10,11 @@ class InheritedInjection extends InheritedWidget {
   AppInfo get appInfo => _appInfo;
 
   static InheritedInjection of(BuildContext context) {
-    return (context.inheritFromWidgetOfExactType(InheritedInjection)as InheritedInjection);
+    return (context.dependOnInheritedWidgetOfExactType<InheritedInjection>());
   }
 
   @override
-  bool updateShouldNotify( InheritedInjection oldWidget) {
+  bool updateShouldNotify(InheritedInjection oldWidget) {
     return true;
   }
 }

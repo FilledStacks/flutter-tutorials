@@ -19,7 +19,6 @@ class _SmartFlareAnimationState extends State<SmartFlareAnimation> {
   static const double AnimationWidth = 295.0;
   static const double AnimationHeight = 251.0;
 
-  AnimationToPlay _animationToPlay = AnimationToPlay.Deactivate;
   AnimationToPlay _lastPlayedAnimation;
 
   // Flare animation controls
