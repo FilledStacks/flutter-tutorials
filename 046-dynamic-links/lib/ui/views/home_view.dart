@@ -11,7 +11,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<HomeViewModel>.reactive(
-        viewModel: HomeViewModel(),
+        viewModelBuilder: () => HomeViewModel(),
         onModelReady: (model) => model.listenToPosts(),
         builder: (context, model, child) => Scaffold(
               backgroundColor: Colors.white,

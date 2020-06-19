@@ -24,7 +24,10 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff181818),
       body: Center(
-        child: Text('Home View', style: TextStyle(color: Colors.white),),
+        child: Text(
+          'Home View',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }
