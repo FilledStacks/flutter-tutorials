@@ -28,6 +28,8 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
+The later tutorials has been updated to use the stacked package. If you want to see the tutorials using the older code you can swap to the pre-stacked branch and work from there.
+
 **051 - Flutter Architecture Part 4 - How to Unit test a Unit Testing intro** \[ [Video](https://youtu.be/n21w5T3jdWE) \] \[ [Written](https://www.filledstacks.com/post/how-to-unit-test-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-4-unit-testing-1) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
 
 **050 - Flutter Architecture Part 3 - Flutter Services** \[ [Video](https://youtu.be/UoZQS1bkNTw) \] \[ [Written](https://www.filledstacks.com/post/services-in-code-and-how-to-use-them-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-3-services) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
