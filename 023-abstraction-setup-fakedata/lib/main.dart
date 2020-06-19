@@ -1,6 +1,4 @@
-import 'package:abstraction_example/services/api/api.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 import 'locator.dart';
 

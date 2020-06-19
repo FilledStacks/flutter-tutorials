@@ -1,4 +1,3 @@
-import 'package:compound/models/post.dart';
 import 'package:compound/ui/shared/ui_helpers.dart';
 import 'package:compound/ui/widgets/post_item.dart';
 import 'package:compound/viewmodels/home_view_model.dart';
