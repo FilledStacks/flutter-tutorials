@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'Flare Welcome',
       home: SplashScreen(
         'assets/splash.flr',
-        HomeView(),
+        (context) => HomeView(),
         startAnimation: 'intro',
         backgroundColor: Color(0xff181818),
       ),
