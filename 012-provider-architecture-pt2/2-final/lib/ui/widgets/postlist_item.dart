@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider_architecutre/core/models/post.dart';
-import 'package:provider_architecutre/ui/shared/app_colors.dart';
 
 class PostListItem extends StatelessWidget {
   final Post post;

@@ -1,28 +1,28 @@
 import 'package:provider/provider.dart';
+import 'package:provider/single_child_widget.dart';
 import 'package:provider_arc/core/services/authentication_service.dart';
 
 import 'core/models/user.dart';
 import 'core/services/api.dart';
 
-List<SingleChildCloneableWidget> providers = [
+List<SingleChildWidget> providers = [
   ...independentServices,
   ...dependentServices,
   ...uiConsumableProviders
 ];
 
-List<SingleChildCloneableWidget> independentServices = [
-  Provider.value(value: Api())
-];
+List<SingleChildWidget> independentServices = [Provider.value(value: Api())];
 
-List<SingleChildCloneableWidget> dependentServices = [
+List<SingleChildWidget> dependentServices = [
   ProxyProvider<Api, AuthenticationService>(
-    builder: (context, api, authenticationService) =>
+    update: (context, api, authenticationService) =>
         AuthenticationService(api: api),
   )
 ];
 
-List<SingleChildCloneableWidget> uiConsumableProviders = [
+List<SingleChildWidget> uiConsumableProviders = [
   StreamProvider<User>(
-    builder: (context) => Provider.of<AuthenticationService>(context, listen: false).user,
+    create: (context) =>
+        Provider.of<AuthenticationService>(context, listen: false).user,
   )
 ];

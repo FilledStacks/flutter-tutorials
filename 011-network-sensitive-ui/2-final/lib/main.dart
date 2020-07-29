@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamProvider<ConnectivityStatus>(
-      builder: (context) => ConnectivityService().connectionStatusController,
+      create: (context) =>
+          ConnectivityService().connectionStatusController.stream,
       child: MaterialApp(
         title: 'Connectivity Aware UI',
         theme: ThemeData(

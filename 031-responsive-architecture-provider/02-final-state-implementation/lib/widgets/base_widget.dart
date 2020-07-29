@@ -32,7 +32,7 @@ class _BaseWidgetState<T extends ChangeNotifier> extends State<BaseWidget<T>> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      builder: (context) => _model,
+      create: (context) => _model,
       child: widget.child,
     );
   }

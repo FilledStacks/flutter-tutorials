@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nav_service/constants/route_paths.dart' as routes;
 import 'package:nav_service/viewmodels/login_viewmodel.dart';
 import 'package:provider/provider.dart';
 
@@ -9,7 +8,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      builder: (context) => LoginViewModel(),
+      create: (context) => LoginViewModel(),
       child: Consumer<LoginViewModel>(
         builder: (context, model, child) => Scaffold(
           body: Padding(
@@ -19,7 +18,7 @@ class LoginView extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {
                   model.login(success: true);
-              },
+                },
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
@@ -46,7 +45,9 @@ class LoginView extends StatelessWidget {
                                   fontWeight: FontWeight.w800,
                                   color: Colors.white,
                                   fontSize: 30))
-                          : CircularProgressIndicator(valueColor: AlwaysStoppedAnimation(Colors.white),),
+                          : CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation(Colors.white),
+                            ),
                       decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(10),

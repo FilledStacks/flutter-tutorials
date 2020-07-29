@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider_architecutre/ui/views/home_view.dart';
-import 'package:provider_architecutre/ui/views/post_view.dart';
 
 import 'login_view.dart';
 

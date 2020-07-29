@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Provider(
-      builder: (context) => AppInfo(),
+      create: (context) => AppInfo(),
       child: MaterialApp(
         title: 'Dependency Injection',
         theme: ThemeData(

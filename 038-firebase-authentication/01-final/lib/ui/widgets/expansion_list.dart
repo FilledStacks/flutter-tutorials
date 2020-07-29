@@ -129,7 +129,7 @@ class ExpansionListItem extends StatelessWidget {
                 title ?? '',
                 style: Theme.of(context)
                     .textTheme
-                    .subhead
+                    .subtitle1
                     .copyWith(fontSize: smallVersion ? 12 : 15),
               ),
             ),

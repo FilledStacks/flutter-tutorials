@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
                   color: Colors.yellow,
                   onPressed: () async {
                     getDelayedRandomValue().listen((value) {
-                      print('Value from manualStream: ${value}');
+                      print('Value from manualStream: $value');
                     });
                   },
                 ),

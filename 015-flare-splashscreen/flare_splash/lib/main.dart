@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       title: 'Flare Welcome',
       home: SplashScreen(
         'assets/splash.flr',
-        HomeView(),
+        (context) => HomeView(),
         startAnimation: 'intro',
         backgroundColor: Color(0xff181818),
       ),
@@ -24,7 +24,10 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff181818),
       body: Center(
-        child: Text('Home View', style: TextStyle(color: Colors.white),),
+        child: Text(
+          'Home View',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }

@@ -4,7 +4,7 @@ import 'package:scoped_guide/scoped_models/home_model.dart';
 import 'package:scoped_guide/scoped_models/success_model.dart';
 import 'package:scoped_guide/services/storage_service.dart';
 
-GetIt locator = GetIt();
+GetIt locator = GetIt.instance;
 
 void setupLocator() {
   // register services

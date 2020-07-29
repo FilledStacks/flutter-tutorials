@@ -1,5 +1,1 @@
-enum DeviceScreenType {
-  Mobile,
-  Tablet,
-  Desktop
-}
+enum DeviceScreenType { Mobile, Tablet, Desktop }

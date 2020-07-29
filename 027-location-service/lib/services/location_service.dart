@@ -13,8 +13,8 @@ class LocationService {
 
   LocationService() {
     location.requestPermission().then((granted) {
-      if (granted) {
-        location.onLocationChanged().listen((locationData) {
+      if (granted == PermissionStatus.granted) {
+        location.onLocationChanged.listen((locationData) {
           if (locationData != null) {
             _locationController.add(UserLocation(
               latitude: locationData.latitude,

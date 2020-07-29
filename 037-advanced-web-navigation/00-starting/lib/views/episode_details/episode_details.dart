@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider_architecture/viewmodel_provider.dart';
+import 'package:stacked/stacked.dart';
 import 'package:the_basics/viewmodels/episode_details_view_model.dart';
 
 class EpisodeDetails extends StatelessWidget {
@@ -8,8 +8,8 @@ class EpisodeDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ViewModelProvider<EpisodeDetailsViewModel>.withConsumer(
-      viewModel: EpisodeDetailsViewModel(),
+    return ViewModelBuilder<EpisodeDetailsViewModel>.reactive(
+      viewModelBuilder: () => EpisodeDetailsViewModel(),
       onModelReady: (model) => model.getEpisodeData(id),
       builder: (context, model, child) => Center(
         child: Column(

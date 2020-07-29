@@ -1,7 +1,6 @@
 import 'package:abstraction_unit/locator.dart';
 import 'package:abstraction_unit/services/api/api.dart';
 import 'package:abstraction_unit/services/post_service.dart';
-import 'package:abstraction_unit/services/storage/localstorage_service.dart';
 import 'package:abstraction_unit/services/storage/storage_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
