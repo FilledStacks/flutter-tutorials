@@ -28,11 +28,17 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
-**051 - Flutter Architecture Part 4 - How to Unit test a Unit Testing intro** \[ [Video](https://youtu.be/n21w5T3jdWE) \] \[ [Written](https://www.filledstacks.com/post/how-to-unit-test-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-4-unit-testing-1) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
+**054 - Flutter Architecture Part 7 - Dialog Service** \[ [Video](https://youtu.be/uuyJHCxxMEY) \] \[ [Written](https://www.filledstacks.com/post/show-dialogs-without-context/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-7-dialog-service) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
 
-**050 - Flutter Architecture Part 3 - Flutter Services** \[ [Video](https://youtu.be/UoZQS1bkNTw) \] \[ [Written](https://www.filledstacks.com/post/services-in-code-and-how-to-use-them-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-3-services) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
+**053 - Flutter Architecture Part 6 - Bottom Navigation with Stacked** \[ [Video](https://youtu.be/OBIrqm0LDaA) \] \[ [Written](https://www.filledstacks.com/post/bottom-navigation-with-stacked-architecture/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-6-bottom-nav) \] - A guide to implementing a bottom navigation bar using stacked.
 
-**049 - Flutter Architecture Part 2 - Stacked State Management scenarios** \[ [Video](https://youtu.be/hEy_36LPcgQ) \] \[ [Written](https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-2-stacked-statemanagement) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
+**052 - Flutter Architecture Part 5 - How to Mock - Unit Testing** \[ [Video](https://youtu.be/Kq-YMAE1ssA) \] \[ [Written](https://www.filledstacks.com/post/how-to-mock-for-unit-testing/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-5-mocking-unit-tests) \] - A complete guide to mocking in unit testing, how it's used for tests and what they're used for.
+
+**051 - Flutter Architecture Part 4 - How to Unit test a Unit Testing intro** \[ [Video](https://youtu.be/n21w5T3jdWE) \] \[ [Written](https://www.filledstacks.com/post/how-to-unit-test-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-4-unit-testing-1) \] - An intro to unit testing and how to set it up in Flutter. 
+
+**050 - Flutter Architecture Part 3 - Flutter Services** \[ [Video](https://youtu.be/UoZQS1bkNTw) \] \[ [Written](https://www.filledstacks.com/post/services-in-code-and-how-to-use-them-in-flutter/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-3-services) \] - A complete guide on services, service classes, what they are used for and how to use them.
+
+**049 - Flutter Architecture Part 2 - Stacked State Management scenarios** \[ [Video](https://youtu.be/hEy_36LPcgQ) \] \[ [Written](https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part-2-stacked-statemanagement) \] - This tutorial goes over common state management situation encountered in a real world application
 
 **048 - Flutter Architecture Part 1 - Stacked, Routing and GetIt setup** \[ [Video](https://youtu.be/DO8le1W_HqQ) \] \[ [Written](https://www.filledstacks.com/post/flutter-and-provider-architecture-using-stacked/) \] \[ [Source Code](https://github.com/FilledStacks/stacked-example/tree/part1-setup) \] - A complete guide to the setup of the basics for a starter stacked architecture project.
 
