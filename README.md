@@ -28,7 +28,7 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
-**057 - SQLite in Flutter | Migrations and Schema Management** \[ Video (coming soon) \] \[ Written (coming soon) \] - This tutorial goes over the SQLite implementation used in our production applications. It shows the basics of SQLite. The meat of the tutorial comes from the schema management solution we use.
+**057 - SQLite in Flutter | Migrations and Schema Management** \[ [Video](https://youtu.be/yR37lWE6xO4) \] \[ [Written](https://www.filledstacks.com/post/sq-lite-in-flutter/) \] - This tutorial goes over the SQLite implementation used in our production applications. It shows the basics of SQLite. The meat of the tutorial comes from the schema management solution we use.
 
 **055 - Lottie Splash Screen in Flutter** \[ [Video](https://youtu.be/YcUip0Y8CUg) \] \[ [Written](https://www.filledstacks.com/post/lottie-splash-screen-intro-in-flutter/) \] - A tutorial that shows you how to implement an animated splash screen using Lottie and delay the navigation until it's complete.
 
