@@ -28,6 +28,8 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
+**058 - Firebase auth with Google sign-in in Flutter ** \[ [Video](https://www.youtube.com/watch?v=8M-Fa239Hy4) \] \[ [Written](https://medium.com/@osama.asif20/flutter-google-sign-in-with-firebase-auth-175c52297c61?sk=5883cd77b16037454dcebd4e4ce41a8e \] - This tutorial goes over the firebase auth implementation with google sign in flutter.
+
 **057 - SQLite in Flutter | Migrations and Schema Management** \[ [Video](https://youtu.be/yR37lWE6xO4) \] \[ [Written](https://www.filledstacks.com/post/sq-lite-in-flutter/) \] - This tutorial goes over the SQLite implementation used in our production applications. It shows the basics of SQLite. The meat of the tutorial comes from the schema management solution we use.
 
 **055 - Lottie Splash Screen in Flutter** \[ [Video](https://youtu.be/YcUip0Y8CUg) \] \[ [Written](https://www.filledstacks.com/post/lottie-splash-screen-intro-in-flutter/) \] - A tutorial that shows you how to implement an animated splash screen using Lottie and delay the navigation until it's complete.
