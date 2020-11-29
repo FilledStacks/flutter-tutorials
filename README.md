@@ -28,6 +28,8 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
+**058 - Bottom Sheet Service | Using Flutter Bottom Sheets without context** \[ [Video](https://youtu.be/OvBl-j59bOg) \] \[ [Written](https://www.filledstacks.com/post/bottom-sheets-in-flutter-through-stacked-services/) \] \[ [Source](https://github.com/FilledStacks/stacked-example/tree/part-8-bottom-sheet-service) \] - This tutorial goes over the usage of the new BottomSheetService in the stacked_services package. 
+
 **057 - SQLite in Flutter | Migrations and Schema Management** \[ [Video](https://youtu.be/yR37lWE6xO4) \] \[ [Written](https://www.filledstacks.com/post/sq-lite-in-flutter/) \] - This tutorial goes over the SQLite implementation used in our production applications. It shows the basics of SQLite. The meat of the tutorial comes from the schema management solution we use.
 
 **055 - Lottie Splash Screen in Flutter** \[ [Video](https://youtu.be/YcUip0Y8CUg) \] \[ [Written](https://www.filledstacks.com/post/lottie-splash-screen-intro-in-flutter/) \] - A tutorial that shows you how to implement an animated splash screen using Lottie and delay the navigation until it's complete.
