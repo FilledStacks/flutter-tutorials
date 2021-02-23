@@ -28,6 +28,18 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
+**064 - New Improved Stacked Setup** \[ [Video](https://youtu.be/1WW8xHhZvyA) \] \[ [Source](https://github.com/FilledStacks/boxtout/tree/main/src/clients/customer) \] - This tutorial goes over the new and improved stacked setup that includes navigation, dependency registration and the traditional stacked statemanagement.
+
+**063 - Firebase Authentication in 5 minutes** \[ [Video](https://youtu.be/2YZrXEHrvBI) \] \[ [Source](https://github.com/FilledStacks/boxtout/tree/main/src/clients/customer) \] - In this tutorial we setup the firebase authentication for a flutter app in 5 minutes
+
+**062 - Code overview for Firebase Backend** \[ [Video](https://youtu.be/ImjeP6Ts8JI) \] - This tutorial goes over the code required to build a scalable firebase backend
+
+**061 - Planning a Firebase Backend** \[ [Video](https://youtu.be/nj21LXUUhyo) \] - In this tutorial we go over a detailed plan for building a scalable backend using Firebase Cloud Functions.
+
+**060 - Making Technical decisions** \[ [Video](https://youtu.be/Ly6_gkY4sUQ) \] - In this tutorial we go over the thinking and reasoning behind making some of the technical decisions required when planning for a large scale product development
+
+**059 - Planning a Food Delivery Service** \[ [Video](https://youtu.be/8nVnrdFFBWw) \] - This tutorial goes over the planning for a food delivery product
+
 **058 - Bottom Sheet Service | Using Flutter Bottom Sheets without context** \[ [Video](https://youtu.be/OvBl-j59bOg) \] \[ [Written](https://www.filledstacks.com/post/bottom-sheets-in-flutter-through-stacked-services/) \] \[ [Source](https://github.com/FilledStacks/stacked-example/tree/part-8-bottom-sheet-service) \] - This tutorial goes over the usage of the new BottomSheetService in the stacked_services package. 
 
 **057 - SQLite in Flutter | Migrations and Schema Management** \[ [Video](https://youtu.be/yR37lWE6xO4) \] \[ [Written](https://www.filledstacks.com/post/sq-lite-in-flutter/) \] - This tutorial goes over the SQLite implementation used in our production applications. It shows the basics of SQLite. The meat of the tutorial comes from the schema management solution we use.
