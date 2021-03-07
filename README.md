@@ -28,6 +28,8 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
+**066 - Login and Create Account Implementation** \[ [Video Soon] \] \[ [Source](https://github.com/FilledStacks/boxtout/tree/main/src/clients/customer) \] \[ [Written](https://www.filledstacks.com/post/building-flutter-login-and-sign-up-forms/) \] - This tutorial goes over implementation we'll be using for Login and Create Account functionality. 
+
 **064 - New Improved Stacked Setup** \[ [Video](https://youtu.be/1WW8xHhZvyA) \] \[ [Source](https://github.com/FilledStacks/boxtout/tree/main/src/clients/customer) \] - This tutorial goes over the new and improved stacked setup that includes navigation, dependency registration and the traditional stacked statemanagement.
 
 **063 - Firebase Authentication in 5 minutes** \[ [Video](https://youtu.be/2YZrXEHrvBI) \] \[ [Source](https://github.com/FilledStacks/boxtout/tree/main/src/clients/customer) \] - In this tutorial we setup the firebase authentication for a flutter app in 5 minutes
