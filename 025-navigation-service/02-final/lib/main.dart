@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.grey[800]
       ),
       navigatorKey: locator<NavigationService>().navigatorKey,
-      onGenerateRoute: router.generateRoute,
+      onGenerateRoute: RouteGenerator.generateRoute,
       initialRoute: routes.LoginRoute,
     );
   }
