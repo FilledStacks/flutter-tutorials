@@ -4,7 +4,9 @@ import 'package:nav_service/constants/route_paths.dart' as routes;
 import 'package:nav_service/views/home_view.dart';
 import 'package:nav_service/views/login_view.dart';
 
-Route<dynamic> generateRoute(RouteSettings settings) {
+class RouteGenerator {
+  
+  static Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case routes.LoginRoute:
       return MaterialPageRoute(builder: (context) => LoginView());
@@ -21,4 +23,5 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         ),
       );
   }
+}
 }
