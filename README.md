@@ -1,3 +1,5 @@
+[![Stacked 3.1 release banner](https://github.com/FilledStacks/stacked/blob/master/packages/stacked/assets/banner.jpeg)](https://stacked.filledstacks.com/)
+
 # Flutter tutorials
 
 The repo contains the source code for all the written tutorials by Filledstacks.
