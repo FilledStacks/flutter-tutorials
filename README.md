@@ -2,19 +2,11 @@
 
 The repo contains the source code for all the written tutorials by Filledstacks.
 
-All Tutorials plus additional snippets and shorter posts can be found on the [Official FilledStacks website](https://www.filledstacks.com/). Each tutorial's code can be downloaded separately using the "Download Code" button under the Thumbnail images in the Written tutorials linked below.
+All Tutorials plus additional snippets and shorter posts can be found on the [Official FilledStacks website](https://www.filledstacks.com/). 
 
-<a href='https://ko-fi.com/L4L5WN7R' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+## Products
 
-Please clone and star this repo to stay up to date on changes.
-
-## Packages by FilledStacks
-
-[Stacked](https://pub.dev/packages/stacked): A package that helps implement the stacked architecture as shown in [this series](https://youtu.be/DO8le1W_HqQ)
-
-[SmartFlare](https://pub.dartlang.org/packages/smart_flare): An extension of the already awesome Flare packages that adds interactive to FlareActors with some more functionality.
-
-[Responsive Builder](https://pub.dev/packages/responsive_builder): A package that helps you write a readable and maintainable Responsive UI code base. Based on the [responsive UI series](https://www.youtube.com/playlist?list=PLQQBiNtFxeyJbOkeKBe_JG36gm1V2629H)
+Besides all the free content you can also sign up for the [Flutter Web Mastery course](https://filledstacks.teachable.com/)
 
 ## \*\* Important \*\*
 
@@ -28,9 +20,11 @@ In the repo to generate the platform projects for the tutorials.
 
 ## Tutorials
 
-**085 - How to Build a Flutter Website in 2023** \[ [Written](https://www.filledstacks.com/post/how-to-build-a-flutter-website-in-2023/) \] - The updated tutorial for building a Flutter Website
+**087 - How to Build a Flutter Website in 2023** \[ [Video](https://youtu.be/yvn6I9hzsJs) \] \[ [Source](https://github.com/FilledStacks/academy/tree/tutorials/02-nested-routing-start) \]  \[ [Written](https://www.filledstacks.com/post/how-to-build-a-flutter-website-in-2023/) \] - The updated tutorial for building a Flutter Website
 
-**067 - Flutter Slivers Explained** \[ [Video]() \] \[ [Source]() \] \[ [Written]() \] - In this tutorial I go over what slivers are, how they work and how to implement your own custom sliver.
+**086 - Flutter Website Nested Layouts and Custom URL's** \[ [Video](https://youtu.be/cGdNRnBdWpw) \] \[ [Source](https://github.com/FilledStacks/academy/tree/tutorials/02-nested-routing) \] - The updated tutorial for building a Flutter Website
+
+**085 - 6 Tips to Make your Flutter Website feel Premium** \[ [Video](https://youtu.be/ZFx9leiFlvM) \]  \[ [Written](https://www.filledstacks.com/post/6-tips-to-make-your-flutter-website-feel-premium/) \] - 6 Tips you can apply to immediately make your Flutter Website feel more premium
 
 **066 - Login and Create Account Implementation** \[ [Video](https://youtu.be/Y-JawJ4m6Fg) \] \[ [Source](https://github.com/FilledStacks/boxtout/tree/main/src/clients/customer) \] \[ [Written](https://www.filledstacks.com/post/building-flutter-login-and-sign-up-forms/) \] - This tutorial goes over implementation we'll be using for Login and Create Account functionality. 
 
