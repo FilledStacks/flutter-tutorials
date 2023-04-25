@@ -6,7 +6,7 @@ All Tutorials plus additional snippets and shorter posts can be found on the [Of
 
 ## Products
 
-Besides all the free content you can also sign up for the [Flutter Web Mastery course](https://filledstacks.teachable.com/)
+[Flutter Web Mastery course](https://dane-mackier-s-school.teachable.com/p/master-flutter-on-the-web)
 
 ## \*\* Important \*\*
 
