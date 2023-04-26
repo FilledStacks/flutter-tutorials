@@ -27,7 +27,7 @@ dependencies:
   get_it: ^4.0.2
   stacked: ^1.6.0
   provider: ^4.1.3
-  http: ^0.12.1
+  http: ">=0.12.1 <0.14.0"
 
 dev_dependencies:
   flutter_test:
