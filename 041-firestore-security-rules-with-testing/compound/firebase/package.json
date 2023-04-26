@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@firebase/testing": "^0.16.7",
-    "firebase-admin": "^8.9.2",
+    "firebase-admin": "^11.4.1",
     "jest": "^25.1.0"
   }
 }
